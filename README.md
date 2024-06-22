@@ -1,1 +1,1 @@
-# Firebase Verifier
+# Bos Eriko's VS Config
