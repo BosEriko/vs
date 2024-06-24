@@ -73,6 +73,7 @@
     ],
     "vim.leader": "<space>",
     "vim.handleKeys": {
+        "<C-w>": false, // Close tab
         "<C-p>": false, // Find Files
         "<C-z>": false, // Opens Terminal
         "<C-h>": false, // Previous Tab
