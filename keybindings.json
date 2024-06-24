@@ -1,4 +1,7 @@
 [
+    // ================================================================================
+    // Open Explorer
+    // ================================================================================
     {
         "key": "ctrl+\\",
         "command": "workbench.action.closeSidebar",
@@ -10,11 +13,103 @@
         "when": "!explorerViewletVisible"
     },
     {
+        "key": "ctrl+\\",
+        "command": "-workbench.action.splitEditor"
+    },
+    // ================================================================================
+    // Previous Tab
+    // ================================================================================
+    {
         "key": "ctrl+h",
         "command": "workbench.action.previousEditorInGroup"
     },
     {
+        "key": "ctrl+h",
+        "command": "-editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "-extension.vim_ctrl+h",
+        "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
+    },
+    // ================================================================================
+    // Next Tab
+    // ================================================================================
+    {
         "key": "ctrl+l",
         "command": "workbench.action.nextEditorInGroup"
     },
+    {
+        "key": "ctrl+l",
+        "command": "-workbench.action.chat.clear",
+        "when": "hasChatProvider && inChat"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-extension.vim_navigateCtrlL",
+        "when": "editorTextFocus && vim.active && vim.use<C-l> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-notebook.centerActiveCell",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    // ================================================================================
+    // Toggle Terminal
+    // ================================================================================
+    {
+        "key": "ctrl+z",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminalFocus || !terminalFocus"
+    },
+    {
+        "key": "ctrl+z",
+        "command": "-extension.vim_ctrl+z",
+        "when": "editorTextFocus && vim.active && vim.use<C-z> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+z",
+        "command": "-inlineChat.unstash",
+        "when": "inlineChatHasStashedSession && !editorReadonly"
+    },
+    {
+        "key": "ctrl+z",
+        "command": "-undo"
+    },
+    // ================================================================================
+    // Save File
+    // ================================================================================
+    {
+        "key": "ctrl+s",
+        "command": "workbench.action.files.saveWithoutFormatting"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+s",
+        "command": "-workbench.action.files.saveWithoutFormatting"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "-workbench.action.files.save"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "-extension.vim_ctrl+s",
+        "when": "editorTextFocus && vim.active && vim.use<C-s> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+z",
+        "command": "-extension.vim_ctrl+z",
+        "when": "editorTextFocus && vim.active && vim.use<C-z> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+z",
+        "command": "-inlineChat.unstash",
+        "when": "inlineChatHasStashedSession && !editorReadonly"
+    }
 ]

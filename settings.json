@@ -19,8 +19,7 @@
         "itemMargin": 0
     },
     "apc.stylesheet": {
-        ".editor-group-watermark .letterpress": "display: block !important",
-        ".monaco-workbench.vs-dark .part.editor > .content .editor-group-container .editor-group-watermark > .letterpress": "background-image: url('https://raw.githubusercontent.com/BosEriko/vs/master/wallpaper.webp') !important; background-color: #24314f !important; background-size: contain !important; background-position: bottom center !important; width: 100vw !important; height: 100vh !important; position: fixed !important; top: 0 !important; left: 0 !important;",
+        ".editor-group-watermark .letterpress": "background-image: url('https://raw.githubusercontent.com/BosEriko/vs/master/wallpaper.gif') !important",
         ".editor-group-watermark .shortcuts": "display: none !important",
         ".title-label": "display: none !important",
         ".editor-actions": "display: none !important",
@@ -55,15 +54,39 @@
     // Vim
     // ================================================================================
     "editor.lineNumbers": "relative",
+    "vim.useSystemClipboard": true,
     "vim.easymotion": true,
+    "vim.easymotionKeys": "asdfjkl;",
     "vim.easymotionMarkerBackgroundColor": "black",
     "vim.easymotionMarkerFontWeight": "normal",
     "vim.easymotionMarkerForegroundColorOneChar": "white",
-    "vim.leader": " ",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "extension.easymotion-s"
+            ]
+        },
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-p>": false, // Find Files
+        "<C-z>": false, // Opens Terminal
+        "<C-h>": false, // Previous Tab
+        "<C-l>": false, // Next Tab
+        "<C-s>": false, // Save File
+    },
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
     // ================================================================================
     // Settings
     // ================================================================================
     "window.menuBarVisibility": "compact",
     "window.title": "Editor",
     "workbench.startupEditor": "none",
+    "terminal.integrated.cursorStyle": "line",
 }
