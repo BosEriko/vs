@@ -39,10 +39,6 @@
     // ================================================================================
     "workbench.colorTheme": "Sweet Dracula",
     "window.titleBarStyle": "native",
-    "workbench.colorCustomizations": {
-        "scrollbar.shadow": "#ffffff00",
-        "widget.shadow": "#ffffff00",
-    },
     "editor.minimap.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
@@ -53,6 +49,18 @@
     "workbench.editor.enablePreview": false,
     "editor.guides.indentation": false,
     "workbench.tree.renderIndentGuides": "none",
+    "window.menuBarVisibility": "compact",
+    "window.title": "Editor",
+    "workbench.startupEditor": "none",
+    "terminal.integrated.cursorStyle": "line",
+    "workbench.activityBar.location": "hidden",
+    "window.commandCenter": false,
+    "workbench.colorCustomizations": {
+        "scrollbar.shadow": "#ffffff00",
+        "widget.shadow": "#ffffff00",
+        "scrollbarSlider.background": "#ffffff00",
+        "focusBorder": "#ffffff00",
+    },
     // ================================================================================
     // Vim
     // ================================================================================
@@ -106,12 +114,6 @@
     // ================================================================================
     // Settings
     // ================================================================================
-    "window.menuBarVisibility": "compact",
-    "window.title": "Editor",
-    "workbench.startupEditor": "none",
-    "terminal.integrated.cursorStyle": "line",
-    "workbench.activityBar.location": "hidden",
-    "window.commandCenter": false,
     "telemetry.telemetryLevel": "off",
     "security.allowedUNCHosts": [
         "wsl.localhost"
