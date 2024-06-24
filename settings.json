@@ -23,7 +23,7 @@
         ".title-label": "display: none !important",
         ".editor-actions": "display: none !important",
         ".composite.title": "display: none !important",
-        ".tabs": "background-color: none !important",
+        ".tabs.title": "background-color: rgba(255,255,255,.0) !important",
         ".tabs-and-actions-container": "background-color: none !important",
         ".explorer-folders-view": "margin-top: 15px !important",
         ".monaco-list::before": "display: none !important",
@@ -79,4 +79,8 @@
     "terminal.integrated.cursorStyle": "line",
     "workbench.activityBar.location": "hidden",
     "window.commandCenter": false,
+    "telemetry.telemetryLevel": "off",
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
 }
