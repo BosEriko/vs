@@ -21,22 +21,20 @@
     },
     "apc.stylesheet": {
         ".title-label": "display: none !important",
-        ".composite.title": "display: block !important",
+        ".editor-actions": "display: none !important",
+        ".composite.title": "display: none !important",
+        ".explorer-folders-view": "margin-top: 15px !important",
         ".monaco-workbench .part.sidebar .title-actions .actions-container": "justify-content: space-evenly !important"
-    },
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
     },
     // ================================================================================
     // Theme
     // ================================================================================
-    "workbench.colorTheme": "Vesper",
+    "workbench.colorTheme": "Sweet Dracula",
     // ================================================================================
     // Settings
     // ================================================================================
     "zenMode.centerLayout": false,
     "zenMode.fullScreen": false,
-    "workbench.activityBar.visible": false,
     "workbench.layoutControl.enabled": false,
     "window.menuBarVisibility": "compact",
     "window.title": "Editor",
@@ -47,4 +45,6 @@
     "breadcrumbs.enabled": false,
     "editor.scrollbar.verticalScrollbarSize": 0,
     "workbench.sideBar.location": "right",
+    "workbench.activityBar.visible": false,
+    "editor.guides.indentation": false,
 }
