@@ -24,7 +24,7 @@
         ".editor-actions": "display: none !important",
         ".composite.title": "display: none !important",
         ".tab": "background-color: rgba(255,255,255,.0) !important; border: none !important; margin-right: 5px !important; border-radius: 10px;",
-        ".tab.active.selected": "background-color: #11131c !important;",
+        ".tab.active.selected": "background-color: rgba(0,0,0,.35) !important; border: none !important;",
         ".tabs": "background-color: rgba(255,255,255,.0) !important; margin: 5px;",
         ".tabs-and-actions-container": "background-color: none !important",
         ".explorer-folders-view": "margin-top: 30px !important",
