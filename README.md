@@ -1,1 +1,1 @@
-# Bos Eriko's VS Config
+# Bos Eriko's VSCodium Config
