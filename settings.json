@@ -28,6 +28,10 @@
         "asvetliakov.vscode-neovim": 1
     },
     // ================================================================================
+    // Theme
+    // ================================================================================
+    "workbench.colorTheme": "Vesper",
+    // ================================================================================
     // Settings
     // ================================================================================
     "zenMode.centerLayout": false,
@@ -38,5 +42,9 @@
     "window.title": "Editor",
     "workbench.statusBar.visible": false,
     "workbench.editor.enablePreview": false,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "breadcrumbs.enabled": false,
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "workbench.sideBar.location": "right",
 }
