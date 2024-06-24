@@ -4,13 +4,18 @@
     // ================================================================================
     {
         "key": "ctrl+\\",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "editorFocus && explorerViewletVisible"
+    },
+    {
+        "key": "ctrl+\\",
         "command": "workbench.action.closeSidebar",
-        "when": "explorerViewletVisible"
+        "when": "explorerViewletFocus"
     },
     {
         "key": "ctrl+\\",
         "command": "workbench.view.explorer",
-        "when": "!explorerViewletVisible"
+        "when": "editorFocus && !explorerViewletVisible"
     },
     {
         "key": "ctrl+\\",
