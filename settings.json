@@ -1,4 +1,34 @@
 {
+    "zenMode.centerLayout": false,
+    "zenMode.fullScreen": false,
+    "workbench.activityBar.visible": false,
+    "workbench.layoutControl.enabled": false,
+    "window.menuBarVisibility": "compact",
+    // ================================================================================
+    // APC - UI Customizer
+    // ================================================================================
+    "window.titleBarStyle": "native",
+    "apc.menubar.compact": true,
+    "apc.electron": {
+        "frame": false,
+        "titleBarStyle": "hidden"
+    },
+    "apc.header": {
+        "height": 37
+    },
+    "apc.sidebar.titlebar": {
+        "height": 37
+    },
+    "apc.activityBar": {
+        "size": 40,
+        "itemSize": 40,
+        "itemMargin": 0
+    },
+    "apc.stylesheet": {
+        ".title-label": "display: none !important",
+        ".composite.title": "display: block !important",
+        ".monaco-workbench .part.sidebar .title-actions .actions-container": "justify-content: space-evenly !important"
+    },
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     }
