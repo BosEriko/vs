@@ -37,7 +37,8 @@
     // ================================================================================
     // Theme & UI Settings
     // ================================================================================
-    "workbench.colorTheme": "Sweet Dracula",
+    "workbench.colorTheme": "poimandres",
+    "workbench.productIconTheme": "material-product-icons",
     "window.titleBarStyle": "native",
     "editor.minimap.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
