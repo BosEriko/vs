@@ -23,12 +23,16 @@
         ".title-label": "display: none !important",
         ".editor-actions": "display: none !important",
         ".composite.title": "display: none !important",
-        ".tabs.title": "background-color: rgba(255,255,255,.0) !important",
+        ".tab": "background-color: rgba(255,255,255,.0) !important; border: none !important; margin-right: 5px !important; border-radius: 10px;",
+        ".tab.active.selected": "background-color: #11131c !important;",
+        ".tabs": "background-color: rgba(255,255,255,.0) !important; margin: 5px;",
         ".tabs-and-actions-container": "background-color: none !important",
-        ".explorer-folders-view": "margin-top: 15px !important",
+        ".explorer-folders-view": "margin-top: 30px !important",
         ".monaco-list::before": "display: none !important",
         ".monaco-workbench .part.sidebar .title-actions .actions-container": "justify-content: space-evenly !important",
         ".monaco-workbench ::selection": "background-color: none !important",
+        ".decorationsOverviewRuler": "display: none !important",
+        ".sidebar": "border: none !important"
     },
     // ================================================================================
     // Theme & UI Settings
@@ -37,7 +41,7 @@
     "window.titleBarStyle": "native",
     "workbench.colorCustomizations": {
         "scrollbar.shadow": "#ffffff00",
-        "widget.shadow": "#ffffff00"
+        "widget.shadow": "#ffffff00",
     },
     "editor.minimap.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
@@ -48,6 +52,7 @@
     "workbench.statusBar.visible": false,
     "workbench.editor.enablePreview": false,
     "editor.guides.indentation": false,
+    "workbench.tree.renderIndentGuides": "none",
     // ================================================================================
     // Vim
     // ================================================================================
