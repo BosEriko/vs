@@ -1,9 +1,4 @@
 {
-    "zenMode.centerLayout": false,
-    "zenMode.fullScreen": false,
-    "workbench.activityBar.visible": false,
-    "workbench.layoutControl.enabled": false,
-    "window.menuBarVisibility": "compact",
     // ================================================================================
     // APC - UI Customizer
     // ================================================================================
@@ -31,5 +26,17 @@
     },
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
-    }
+    },
+    // ================================================================================
+    // Settings
+    // ================================================================================
+    "zenMode.centerLayout": false,
+    "zenMode.fullScreen": false,
+    "workbench.activityBar.visible": false,
+    "workbench.layoutControl.enabled": false,
+    "window.menuBarVisibility": "compact",
+    "window.title": "Editor",
+    "workbench.statusBar.visible": false,
+    "workbench.editor.enablePreview": false,
+    "editor.minimap.enabled": false
 }
