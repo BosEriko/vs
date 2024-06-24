@@ -38,7 +38,7 @@
     // Theme & UI Settings
     // ================================================================================
     "workbench.colorTheme": "poimandres",
-    "workbench.productIconTheme": "material-product-icons",
+    "workbench.iconTheme": "city-lights-icons-vsc",
     "window.titleBarStyle": "native",
     "editor.minimap.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
