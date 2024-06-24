@@ -21,13 +21,15 @@
     },
     "apc.stylesheet": {
         ".editor-group-watermark .letterpress": "display: block !important",
-        ".monaco-workbench.vs-dark .part.editor > .content .editor-group-container .editor-group-watermark > .letterpress": "background-image: url('https://raw.githubusercontent.com/BosEriko/vs/master/logo.png');",
+        ".monaco-workbench.vs-dark .part.editor > .content .editor-group-container .editor-group-watermark > .letterpress": "background-image: url('https://raw.githubusercontent.com/BosEriko/vs/master/logo.png') !important",
         ".editor-group-watermark .shortcuts": "display: none !important",
         ".title-label": "display: none !important",
         ".editor-actions": "display: none !important",
         ".composite.title": "display: none !important",
         ".explorer-folders-view": "margin-top: 15px !important",
-        ".monaco-workbench .part.sidebar .title-actions .actions-container": "justify-content: space-evenly !important"
+        ".monaco-list::before": "display: none !important",
+        ".monaco-workbench .part.sidebar .title-actions .actions-container": "justify-content: space-evenly !important",
+        ".monaco-workbench ::selection": "background-color: none !important",
     },
     // ================================================================================
     // Theme
@@ -47,6 +49,7 @@
     "editor.lineNumbers": "relative",
     "breadcrumbs.enabled": false,
     "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.scrollbar.horizontalScrollbarSize": 0,
     "workbench.sideBar.location": "right",
     "workbench.activityBar.visible": false,
     "editor.guides.indentation": false,
