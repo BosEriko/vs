@@ -1,9 +1,9 @@
-# Bos Eriko's VSCodium Config
+# Bos Eriko's Visual Studio Code Config
 
 ## List all extensions
-List all VSCodium extensions
+List all Visual Studio Code extensions
 ```sh
-    codium --list-extensions | xargs -L 1 echo codium --install-extension | pbcopy
+    code --list-extensions | xargs -L 1 echo code --install-extension | pbcopy
     rm -rf ~/config/vs/extensions.sh
     pbpaste > ~/config/vs/extensions.sh
 ```
