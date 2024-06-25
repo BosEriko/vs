@@ -267,6 +267,15 @@
         "command": "search.action.focusNextSearchResult",
         "when": "hasSearchResult || inSearchEditor"
     },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-extension.vim_ctrl+j",
+        "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+    },
     // ================================================================================
     // Focus previous word in Search Workspace (ctrl+k)
     // ================================================================================
@@ -280,4 +289,9 @@
         "command": "search.action.focusPreviousSearchResult",
         "when": "hasSearchResult || inSearchEditor"
     },
+    {
+        "key": "ctrl+k",
+        "command": "-extension.vim_ctrl+k",
+        "when": "editorTextFocus && vim.active && vim.use<C-k> && !inDebugRepl"
+    }
 ]
