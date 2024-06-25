@@ -49,7 +49,7 @@
     "breadcrumbs.enabled": false,
     "workbench.layoutControl.enabled": false,
     "workbench.statusBar.visible": false,
-    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreview": true,
     "editor.guides.indentation": false,
     "workbench.tree.renderIndentGuides": "none",
     "window.menuBarVisibility": "compact",
