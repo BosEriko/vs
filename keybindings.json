@@ -125,11 +125,17 @@
         "when": "editorTextFocus && vim.active && vim.use<C-s> && !inDebugRepl"
     },
     // ================================================================================
-    // Close all Editors (ctrl+q)
+    // Close all Editors or Open Folder (ctrl+q)
     // ================================================================================
     {
         "key": "ctrl+q",
-        "command": "workbench.action.closeAllEditors"
+        "command": "workbench.action.closeAllEditors",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.addRootFolder",
+        "when": "!editorTextFocus"
     },
     {
         "key": "ctrl+k ctrl+w",

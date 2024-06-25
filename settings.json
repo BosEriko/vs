@@ -93,7 +93,7 @@
         "<C-l>": false, // Next Tab on Editor (ctrl+l)
         "<C-z>": false, // Toggle Full Screen Terminal  (ctrl+z)
         "<C-s>": false, // Save File (ctrl+s)
-        "<C-q>": false, // Close all Editors (ctrl+q)
+        "<C-q>": false, // Close all Editors or Open Folder (ctrl+q)
         "<C-b>": false, // Copy Relative Path (ctrl+b)
         "<C-f>": false, // Search Workspace (ctrl+f)
         "<C-j>": false, // Focus next word in Search Workspace and Next Tab on Terminal (ctrl+j)
