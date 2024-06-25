@@ -222,6 +222,7 @@
     // Settings
     // ================================================================================
     "telemetry.telemetryLevel": "off",
+    "window.confirmSaveUntitledWorkspace": false,
     "security.allowedUNCHosts": [
         "wsl.localhost"
     ]
