@@ -68,6 +68,7 @@
     // ================================================================================
     "editor.lineNumbers": "relative",
     "vim.useSystemClipboard": true,
+    "vim.easymotion": true,
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
     },
@@ -95,10 +96,11 @@
         "<C-c>": false,     // Toggle Comment (ctrl+c)
     },
     "vim.normalModeKeyBindingsNonRecursive": [
-        { "before": ["<space>"], "commands": ["whichkey.show"] },
+        { "before": ["<space>"], "commands": ["whichkey.show"] },           // Activate Whichkey on Normal Mode
+        { "before": ["leader", "f"],"after": ["leader", "leader", "s"] }    // Jump to character (Easymotion)
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
-        { "before": ["<space>"], "commands": ["whichkey.show"] }
+        { "before": ["<space>"], "commands": ["whichkey.show"] }            // Activate Whichkey on Visual Mode
     ],
     "whichkey.bindings": [
         {
@@ -112,12 +114,6 @@
             "name": "Search Devdocs on cursor position",
             "type": "command",
             "command": "extension.devDocs"
-        },
-        {
-            "key": "f",
-            "name": "Jump to character (Easymotion)",
-            "type": "command",
-            "command": "vscode-easymotion.jumpToWord"
         },
         {
             "key": "w",
