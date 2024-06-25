@@ -22,7 +22,7 @@
         "command": "-workbench.action.splitEditor"
     },
     // ================================================================================
-    // Previous Tab on Terminal or Editor (ctrl+h)
+    // Previous Tab on Editor (ctrl+h)
     // ================================================================================
     {
         "key": "ctrl+h",
@@ -41,21 +41,11 @@
     },
     {
         "key": "ctrl+h",
-        "command": "workbench.action.terminal.focusPrevious",
-        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-    },
-    {
-        "key": "ctrl+h",
         "command": "-whichkey.searchBindings",
         "when": "whichkeyVisible"
     },
-    {
-        "key": "ctrl+pageup",
-        "command": "-workbench.action.terminal.focusPrevious",
-        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-    },
     // ================================================================================
-    // Next Tab on Terminal or Editor (ctrl+l)
+    // Next Tab on Editor (ctrl+l)
     // ================================================================================
     {
         "key": "ctrl+l",
@@ -84,18 +74,8 @@
     },
     {
         "key": "ctrl+l",
-        "command": "workbench.action.terminal.focusNext",
-        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-    },
-    {
-        "key": "ctrl+l",
         "command": "-workbench.action.chat.newChat",
         "when": "chatIsEnabled && inChat"
-    },
-    {
-        "key": "ctrl+pagedown",
-        "command": "-workbench.action.terminal.focusNext",
-        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
     },
     // ================================================================================
     // Toggle Full Screen Terminal  (ctrl+z)
@@ -287,17 +267,22 @@
         "when": "focusedView == 'workbench.panel.markers.view'"
     },
     // ================================================================================
-    // Focus next word in Search Workspace (ctrl+j)
+    // Focus next word in Search Workspace and Next Tab on Terminal (ctrl+j)
     // ================================================================================
+    {
+        "key": "ctrl+j",
+        "command": "search.action.focusNextSearchResult",
+        "when": "!terminalFocus && !explorerViewletFocus && (hasSearchResult || inSearchEditor)"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
     {
         "key": "f4",
         "command": "-search.action.focusNextSearchResult",
         "when": "hasSearchResult || inSearchEditor"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "search.action.focusNextSearchResult",
-        "when": "!explorerViewletFocus && (hasSearchResult || inSearchEditor)"
     },
     {
         "key": "ctrl+j",
@@ -308,9 +293,24 @@
         "command": "-extension.vim_ctrl+j",
         "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
     },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
     // ================================================================================
-    // Focus previous word in Search Workspace (ctrl+k)
+    // Focus previous word in Search Workspace and Previous Tab on Terminal (ctrl+k)
     // ================================================================================
+    {
+        "key": "ctrl+k",
+        "command": "search.action.focusPreviousSearchResult",
+        "when": "!terminalFocus && !explorerViewletFocus && (hasSearchResult || inSearchEditor)"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
     {
         "key": "shift+f4",
         "command": "-search.action.focusPreviousSearchResult",
@@ -318,13 +318,13 @@
     },
     {
         "key": "ctrl+k",
-        "command": "search.action.focusPreviousSearchResult",
-        "when": "!explorerViewletFocus && (hasSearchResult || inSearchEditor)"
-    },
-    {
-        "key": "ctrl+k",
         "command": "-extension.vim_ctrl+k",
         "when": "editorTextFocus && vim.active && vim.use<C-k> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "-workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
     },
     // ================================================================================
     // Create new Terminal or Editor (ctrl+n)
@@ -350,7 +350,7 @@
     {
         "key": "ctrl+w",
         "command": "workbench.action.terminal.kill",
-        "when": "terminalFocus",
+        "when": "terminalFocus"
     },
     {
         "key": "ctrl+w",
