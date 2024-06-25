@@ -40,9 +40,9 @@
     "window.title": "Editor",
     "workbench.colorTheme": "poimandres",
     "workbench.iconTheme": "city-lights-icons-vsc",
-    "editor.rulers": [100],
     "window.titleBarStyle": "native",
     "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
     "workbench.sideBar.location": "right",
@@ -58,11 +58,14 @@
     "window.commandCenter": false,
     "editor.renderWhitespace": "none",
     "workbench.statusBar.visible": false,
+    "editor.rulers": [
+        100
+    ],
     "workbench.colorCustomizations": {
         "scrollbar.shadow": "#ffffff00",
         "widget.shadow": "#ffffff00",
         "scrollbarSlider.background": "#ffffff00",
-        "focusBorder": "#ffffff00",
+        "focusBorder": "#ffffff00"
     },
     // ================================================================================
     // Vim
@@ -80,29 +83,58 @@
     "vim.leader": "<space>",
     "vim.handleKeys": {
         // Default Hotkeys
-        "<C-p>": false,     // Fuzzy Find (ctrl+p)
+        "<C-p>": false, // Fuzzy Find (ctrl+p)
         // Custom Hotkeys
-        "<C-\\>": false,    // Open Explorer (ctrl+\)
-        "<C-h>": false,     // Previous Tab on Terminal or Editor (ctrl+h)
-        "<C-l>": false,     // Next Tab on Terminal or Editor (ctrl+l)
-        "<C-z>": false,     // Toggle Full Screen Terminal  (ctrl+z)
-        "<C-s>": false,     // Save File (ctrl+s)
-        "<C-q>": false,     // Close all Editors (ctrl+q)
-        "<C-b>": false,     // Copy Relative Path (ctrl+b)
-        "<C-f>": false,     // Search Workspace (ctrl+f)
-        "<C-j>": false,     // Focus next word in Search Workspace (ctrl+j)
-        "<C-k>": false,     // Focus previous word in Search Workspace (ctrl+k)
-        "<C-n>": false,     // Create new Terminal or Editor (ctrl+n)
-        "<C-w>": false,     // Close Terminal or Editor (ctrl+w)
-        "<C-g>": false,     // Search and Replace (ctrl+g)
-        "<C-c>": false,     // Toggle Comment (ctrl+c)
+        "<C-\\>": false, // Open Explorer (ctrl+\)
+        "<C-h>": false, // Previous Tab on Terminal or Editor (ctrl+h)
+        "<C-l>": false, // Next Tab on Terminal or Editor (ctrl+l)
+        "<C-z>": false, // Toggle Full Screen Terminal  (ctrl+z)
+        "<C-s>": false, // Save File (ctrl+s)
+        "<C-q>": false, // Close all Editors (ctrl+q)
+        "<C-b>": false, // Copy Relative Path (ctrl+b)
+        "<C-f>": false, // Search Workspace (ctrl+f)
+        "<C-j>": false, // Focus next word in Search Workspace (ctrl+j)
+        "<C-k>": false, // Focus previous word in Search Workspace (ctrl+k)
+        "<C-n>": false, // Create new Terminal or Editor (ctrl+n)
+        "<C-w>": false, // Close Terminal or Editor (ctrl+w)
+        "<C-g>": false, // Search and Replace (ctrl+g)
+        "<C-c>": false // Toggle Comment (ctrl+c)
     },
     "vim.normalModeKeyBindingsNonRecursive": [
-        { "before": ["leader", "leader"], "commands": ["whichkey.show"] },  // Activate Whichkey on Normal Mode
-        { "before": ["leader", "f"],"after": ["leader", "leader", "s"] }    // Jump to character (Easymotion)
+        // Activate Whichkey on Normal Mode
+        {
+            "before": [
+                "leader",
+                "leader"
+            ],
+            "commands": [
+                "whichkey.show"
+            ]
+        },
+        // Jump to character (Easymotion)
+        {
+            "before": [
+                "leader",
+                "f"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "s"
+            ]
+        }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
-        { "before": ["leader", "leader"], "commands": ["whichkey.show"] }   // Activate Whichkey on Visual Mode
+        // Activate Whichkey on Visual Mode
+        {
+            "before": [
+                "leader",
+                "leader"
+            ],
+            "commands": [
+                "whichkey.show"
+            ]
+        }
     ],
     "whichkey.bindings": [
         {
@@ -139,8 +171,7 @@
                     "name": "Descending",
                     "type": "command",
                     "command": "editor.action.sortLinesDescending"
-                },
-
+                }
             ]
         },
         {
