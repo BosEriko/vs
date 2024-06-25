@@ -134,8 +134,13 @@
     },
     {
         "key": "ctrl+q",
-        "command": "workbench.action.addRootFolder",
+        "command": "workbench.action.files.openFolder",
         "when": "!editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+o",
+        "command": "-workbench.action.files.openFolder",
+        "when": "openFolderWorkspaceSupport"
     },
     {
         "key": "ctrl+k ctrl+w",
