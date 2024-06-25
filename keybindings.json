@@ -438,7 +438,7 @@
     {
         "key": "a",
         "command": "explorer.newFile",
-        "when": "filesExplorerFocus && foldersViewVisible"
+        "when": "filesExplorerFocus"
     },
     // ================================================================================
     // ANCHOR: File Explorer: Copy File (c)
@@ -446,7 +446,7 @@
     {
         "key": "c",
         "command": "filesExplorer.copy",
-        "when": "filesExplorerFocus && foldersViewVisible"
+        "when": "filesExplorerFocus"
     },
     // ================================================================================
     // ANCHOR: File Explorer: Cut File (x)
@@ -454,7 +454,7 @@
     {
         "key": "x",
         "command": "filesExplorer.cut",
-        "when": "filesExplorerFocus && foldersViewVisible"
+        "when": "filesExplorerFocus"
     },
     // ================================================================================
     // ANCHOR: File Explorer: Paste File (v)
@@ -462,7 +462,7 @@
     {
         "key": "v",
         "command": "filesExplorer.paste",
-        "when": "filesExplorerFocus && foldersViewVisible"
+        "when": "filesExplorerFocus"
     },
     // ================================================================================
     // ANCHOR: File Explorer: Rename File (r)
@@ -470,7 +470,7 @@
     {
         "key": "r",
         "command": "renameFile",
-        "when": "filesExplorerFocus && foldersViewVisible"
+        "when": "filesExplorerFocus"
     },
     // ================================================================================
     // ANCHOR: File Explorer: Delete File (d)
@@ -478,6 +478,14 @@
     {
         "key": "d",
         "command": "moveFileToTrash",
-        "when": "filesExplorerFocus && foldersViewVisible"
+        "when": "filesExplorerFocus"
+    },
+    // ================================================================================
+    // ANCHOR: File Explorer: Remove Folder from Workspace (w)
+    // ================================================================================
+    {
+        "key": "w",
+        "command": "workbench.action.removeRootFolder",
+        "when": "filesExplorerFocus"
     }
 ]
