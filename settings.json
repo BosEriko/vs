@@ -75,9 +75,11 @@
     "vim.easymotionMarkerForegroundColorOneChar": "white",
     "vim.leader": "<space>",
     "vim.handleKeys": {
-        "<C-\\>": false,    // Open Explorer (ctrl+\)
+        // Default Hotkeys
         "<C-w>": false,     // Close tab (ctrl+w)
         "<C-p>": false,     // Fuzzy Find (ctrl+p)
+        // Custom Hotkeys
+        "<C-\\>": false,    // Open Explorer (ctrl+\)
         "<C-h>": false,     // Previous Tab (ctrl+h)
         "<C-l>": false,     // Next Tab (ctrl+l)
         "<C-z>": false,     // Toggle Full Screen Terminal  (ctrl+z)
