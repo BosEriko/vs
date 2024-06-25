@@ -1,3 +1,29 @@
+// ================================== LIST OF KEYS ==================================== //
+//                                                                                      //
+// Open Explorer (ctrl+\)                                                               //
+// Previous Tab on Editor (ctrl+h)                                                      //
+// Next Tab on Editor (ctrl+l)                                                          //
+// Toggle Full Screen Terminal  (ctrl+z)                                                //
+// Save File (ctrl+s)                                                                   //
+// Close all Editors or Open Folder (ctrl+q)                                            //
+// Copy Relative Path (ctrl+b)                                                          //
+// Search Workspace (ctrl+f)                                                            //
+// Focus next word in Search Workspace and Next Tab on Terminal (ctrl+j)                //
+// Focus previous word in Search Workspace and Previous Tab on Terminal (ctrl+k)        //
+// Create new Terminal or Editor (ctrl+n)                                               //
+// Close Terminal or Editor (ctrl+w)                                                    //
+// Search and Replace (ctrl+g)                                                          //
+// Toggle Comment (ctrl+c)                                                              //
+// File Explorer: Create File (a)                                                       //
+// File Explorer: Copy File (c)                                                         //
+// File Explorer: Cut File (x)                                                          //
+// File Explorer: Paste File (v)                                                        //
+// File Explorer: Rename File (r)                                                       //
+// File Explorer: Delete File (d)                                                       //
+// File Explorer: Remove Folder from Workspace (w)                                      //
+//                                                                                      //
+// ==================================================================================== //
+
 [
     // ================================================================================
     // ANCHOR: Open Explorer (ctrl+\)
