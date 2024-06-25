@@ -76,7 +76,6 @@
     "vim.leader": "<space>",
     "vim.handleKeys": {
         // Default Hotkeys
-        "<C-w>": false,     // Close tab (ctrl+w)
         "<C-p>": false,     // Fuzzy Find (ctrl+p)
         // Custom Hotkeys
         "<C-\\>": false,    // Open Explorer (ctrl+\)
@@ -90,6 +89,7 @@
         "<C-j>": false,     // Focus next word in Search Workspace (ctrl+j)
         "<C-k>": false,     // Focus previous word in Search Workspace (ctrl+k)
         "<C-n>": false,     // Create new Terminal or Editor (ctrl+n)
+        "<C-w>": false,     // Close Terminal or Editor (ctrl+w)
     },
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
