@@ -1,6 +1,6 @@
 {
     // ================================================================================
-    // ANCHOR: APC - UI Customizer
+    // APC - UI Customizer
     // ================================================================================
     "apc.menubar.compact": true,
     "apc.electron": {
@@ -39,7 +39,7 @@
         ".quick-input-widget .quick-input-titlebar": "display: none !important"
     },
     // ================================================================================
-    // ANCHOR: Theme & UI Settings
+    // Theme & UI Settings
     // ================================================================================
     "window.title": "Editor",
     "workbench.colorTheme": "poimandres",

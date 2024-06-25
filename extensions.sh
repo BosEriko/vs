@@ -11,4 +11,3 @@ code --install-extension Yummygum.city-lights-icon-vsc
 code --install-extension samueltscott.maximizeterminal
 code --install-extension deibit.devdocs
 code --install-extension ethristianAlexander.flip
-code --install-extension ExodiusStudios.comment-anchors

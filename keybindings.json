@@ -26,7 +26,7 @@
 
 [
     // ================================================================================
-    // ANCHOR: Open Explorer (ctrl+\)
+    // Open Explorer (ctrl+\)
     // ================================================================================
     {
         "key": "ctrl+\\",
@@ -48,7 +48,7 @@
         "command": "-workbench.action.splitEditor"
     },
     // ================================================================================
-    // ANCHOR: Previous Tab on Editor (ctrl+h)
+    // Previous Tab on Editor (ctrl+h)
     // ================================================================================
     {
         "key": "ctrl+h",
@@ -71,7 +71,7 @@
         "when": "whichkeyVisible"
     },
     // ================================================================================
-    // ANCHOR: Next Tab on Editor (ctrl+l)
+    // Next Tab on Editor (ctrl+l)
     // ================================================================================
     {
         "key": "ctrl+l",
@@ -104,7 +104,7 @@
         "when": "chatIsEnabled && inChat"
     },
     // ================================================================================
-    // ANCHOR: Toggle Full Screen Terminal  (ctrl+z)
+    // Toggle Full Screen Terminal  (ctrl+z)
     // ================================================================================
     {
         "key": "ctrl+z",
@@ -131,7 +131,7 @@
         "command": "-undo"
     },
     // ================================================================================
-    // ANCHOR: Save File (ctrl+s)
+    // Save File (ctrl+s)
     // ================================================================================
     {
         "key": "ctrl+s",
@@ -151,7 +151,7 @@
         "when": "editorTextFocus && vim.active && vim.use<C-s> && !inDebugRepl"
     },
     // ================================================================================
-    // ANCHOR: Close all Editors or Open Folder (ctrl+q)
+    // Close all Editors or Open Folder (ctrl+q)
     // ================================================================================
     {
         "key": "ctrl+q",
@@ -187,7 +187,7 @@
         "command": "-workbench.action.quickOpenView"
     },
     // ================================================================================
-    // ANCHOR: Copy Relative Path (ctrl+b)
+    // Copy Relative Path (ctrl+b)
     // ================================================================================
     {
         "key": "ctrl+b",
@@ -208,7 +208,7 @@
         "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
     },
     // ================================================================================
-    // ANCHOR: Search Workspace (ctrl+f)
+    // Search Workspace (ctrl+f)
     // ================================================================================
     {
         "key": "ctrl+f",
@@ -304,7 +304,7 @@
         "when": "focusedView == 'workbench.panel.markers.view'"
     },
     // ================================================================================
-    // ANCHOR: Focus next word in Search Workspace and Next Tab on Terminal (ctrl+j)
+    // Focus next word in Search Workspace and Next Tab on Terminal (ctrl+j)
     // ================================================================================
     {
         "key": "ctrl+j",
@@ -336,7 +336,7 @@
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
     },
     // ================================================================================
-    // ANCHOR: Focus previous word in Search Workspace and Previous Tab on Terminal (ctrl+k)
+    // Focus previous word in Search Workspace and Previous Tab on Terminal (ctrl+k)
     // ================================================================================
     {
         "key": "ctrl+k",
@@ -364,7 +364,7 @@
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
     },
     // ================================================================================
-    // ANCHOR: Create new Terminal or Editor (ctrl+n)
+    // Create new Terminal or Editor (ctrl+n)
     // ================================================================================
     {
         "key": "ctrl+n",
@@ -382,7 +382,7 @@
         "when": "editorTextFocus && vim.active && vim.use<C-n> && !inDebugRepl || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
     },
     // ================================================================================
-    // ANCHOR: Close Terminal or Editor (ctrl+w)
+    // Close Terminal or Editor (ctrl+w)
     // ================================================================================
     {
         "key": "ctrl+w",
@@ -400,7 +400,7 @@
         "when": "activeEditorGroupEmpty && multipleEditorGroups"
     },
     // ================================================================================
-    // ANCHOR: Search and Replace (ctrl+g)
+    // Search and Replace (ctrl+g)
     // ================================================================================
     {
         "key": "ctrl+g",
@@ -421,7 +421,7 @@
         "command": "-workbench.action.gotoLine"
     },
     // ================================================================================
-    // ANCHOR: Toggle Comment (ctrl+c)
+    // Toggle Comment (ctrl+c)
     // ================================================================================
     {
         "key": "ctrl+c",
@@ -459,7 +459,7 @@
         "when": "fileMatchOrMatchFocus"
     },
     // ================================================================================
-    // ANCHOR: File Explorer: Create File (a)
+    // File Explorer: Create File (a)
     // ================================================================================
     {
         "key": "a",
@@ -467,7 +467,7 @@
         "when": "filesExplorerFocus"
     },
     // ================================================================================
-    // ANCHOR: File Explorer: Copy File (c)
+    // File Explorer: Copy File (c)
     // ================================================================================
     {
         "key": "c",
@@ -475,7 +475,7 @@
         "when": "filesExplorerFocus"
     },
     // ================================================================================
-    // ANCHOR: File Explorer: Cut File (x)
+    // File Explorer: Cut File (x)
     // ================================================================================
     {
         "key": "x",
@@ -483,7 +483,7 @@
         "when": "filesExplorerFocus"
     },
     // ================================================================================
-    // ANCHOR: File Explorer: Paste File (v)
+    // File Explorer: Paste File (v)
     // ================================================================================
     {
         "key": "v",
@@ -491,7 +491,7 @@
         "when": "filesExplorerFocus"
     },
     // ================================================================================
-    // ANCHOR: File Explorer: Rename File (r)
+    // File Explorer: Rename File (r)
     // ================================================================================
     {
         "key": "r",
@@ -499,7 +499,7 @@
         "when": "filesExplorerFocus"
     },
     // ================================================================================
-    // ANCHOR: File Explorer: Delete File (d)
+    // File Explorer: Delete File (d)
     // ================================================================================
     {
         "key": "d",
@@ -507,7 +507,7 @@
         "when": "filesExplorerFocus"
     },
     // ================================================================================
-    // ANCHOR: File Explorer: Remove Folder from Workspace (w)
+    // File Explorer: Remove Folder from Workspace (w)
     // ================================================================================
     {
         "key": "w",
