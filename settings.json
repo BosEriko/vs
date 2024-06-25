@@ -37,8 +37,10 @@
     // ================================================================================
     // Theme & UI Settings
     // ================================================================================
+    "window.title": "Editor",
     "workbench.colorTheme": "poimandres",
     "workbench.iconTheme": "city-lights-icons-vsc",
+    "editor.rulers": [100],
     "window.titleBarStyle": "native",
     "editor.minimap.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
@@ -51,7 +53,6 @@
     "editor.guides.indentation": false,
     "workbench.tree.renderIndentGuides": "none",
     "window.menuBarVisibility": "compact",
-    "window.title": "Editor",
     "workbench.startupEditor": "none",
     "terminal.integrated.cursorStyle": "line",
     "workbench.activityBar.location": "hidden",
@@ -74,12 +75,18 @@
     "vim.easymotionMarkerForegroundColorOneChar": "white",
     "vim.leader": "<space>",
     "vim.handleKeys": {
-        "<C-w>": false, // Close tab
-        "<C-p>": false, // Find Files
-        "<C-z>": false, // Opens Terminal
-        "<C-h>": false, // Previous Tab
-        "<C-l>": false, // Next Tab
-        "<C-s>": false, // Save File
+        "<C-\\>": false,    // Open Explorer (ctrl+\)
+        "<C-w>": false,     // Close tab (ctrl+w)
+        "<C-p>": false,     // Fuzzy Find (ctrl+p)
+        "<C-h>": false,     // Previous Tab (ctrl+h)
+        "<C-l>": false,     // Next Tab (ctrl+l)
+        "<C-z>": false,     // Toggle Full Screen Terminal  (ctrl+z)
+        "<C-s>": false,     // Save File (ctrl+s)
+        "<C-q>": false,     // Close all Editors (ctrl+q)
+        "<C-b>": false,     // Copy Relative Path (ctrl+b)
+        "<C-f>": false,     // Search Workspace (ctrl+f)
+        "<C-j>": false,     // Focus next word in Search Workspace (ctrl+j)
+        "<C-k>": false,     // Focus previous word in Search Workspace (ctrl+k)
     },
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
