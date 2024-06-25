@@ -85,6 +85,21 @@
         "vscodevim.vim": 1
     },
     // ================================================================================
+    // WhichKey
+    // ================================================================================
+    "vim.normalModeKeyBindingsNonRecursive": [
+    {
+        "before": ["<space>"],
+        "commands": ["whichkey.show"]
+    }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+    {
+        "before": ["<space>"],
+        "commands": ["whichkey.show"]
+    }
+    ],
+    // ================================================================================
     // Terminal
     // ================================================================================
     "terminal.integrated.profiles.windows": {

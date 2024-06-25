@@ -1,6 +1,6 @@
 [
     // ================================================================================
-    // Open Explorer
+    // Open Explorer (ctrl+\)
     // ================================================================================
     {
         "key": "ctrl+\\",
@@ -22,7 +22,7 @@
         "command": "-workbench.action.splitEditor"
     },
     // ================================================================================
-    // Previous Tab
+    // Previous Tab (ctrl+h)
     // ================================================================================
     {
         "key": "ctrl+h",
@@ -39,7 +39,7 @@
         "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
     },
     // ================================================================================
-    // Next Tab
+    // Next Tab (ctrl+l)
     // ================================================================================
     {
         "key": "ctrl+l",
@@ -66,7 +66,7 @@
         "when": "textInputFocus"
     },
     // ================================================================================
-    // Toggle Terminal
+    // Toggle Full Screen Terminal  (ctrl+z)
     // ================================================================================
     {
         "key": "ctrl+z",
@@ -93,7 +93,7 @@
         "command": "-undo"
     },
     // ================================================================================
-    // Save File
+    // Save File (ctrl+s)
     // ================================================================================
     {
         "key": "ctrl+s",
@@ -111,5 +111,173 @@
         "key": "ctrl+s",
         "command": "-extension.vim_ctrl+s",
         "when": "editorTextFocus && vim.active && vim.use<C-s> && !inDebugRepl"
+    },
+    // ================================================================================
+    // Close all Editors (ctrl+q)
+    // ================================================================================
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.closeAllEditors"
+    },
+    {
+        "key": "ctrl+k ctrl+w",
+        "command": "-workbench.action.closeAllEditors"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-extension.vim_winCtrlQ",
+        "when": "editorTextFocus && vim.active && vim.use<C-q> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quickOpenNavigateNextInViewPicker",
+        "when": "inQuickOpen && inViewsPicker"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quickOpenView"
+    },
+    // ================================================================================
+    // Copy Relative Path (ctrl+b)
+    // ================================================================================
+    {
+        "key": "ctrl+b",
+        "command": "copyRelativeFilePath"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+c",
+        "command": "-copyRelativeFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-extension.vim_ctrl+b",
+        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    // ================================================================================
+    // Search Workspace (ctrl+f)
+    // ================================================================================
+    {
+        "key": "ctrl+f",
+        "command": "workbench.action.findInFiles"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "workbench.action.findInFiles",
+        "when": "searchViewletVisible && !searchViewletFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "workbench.action.closeSidebar",
+        "when": "searchViewletVisible && searchViewletFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "workbench.action.terminal.searchWorkspace",
+        "when": "terminalFocus && terminalProcessSupported && terminalTextSelected"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "workbench.view.search",
+        "when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-workbench.action.terminal.searchWorkspace",
+        "when": "terminalFocus && terminalProcessSupported && terminalTextSelected"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-workbench.action.findInFiles"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-workbench.view.search",
+        "when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-actions.find",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-notebook.find",
+        "when": "notebookEditorFocused && !editorFocus && activeEditor == 'workbench.editor.interactive' || notebookEditorFocused && !editorFocus && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-settings.action.search",
+        "when": "inSettingsEditor"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-repl.action.filter",
+        "when": "inDebugRepl && textInputFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-workbench.action.terminal.focusFind",
+        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-commentsFocusFilter",
+        "when": "focusedView == 'workbench.panel.comments'"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-editor.action.extensioneditor.showfind",
+        "when": "!editorFocus && activeEditor == 'workbench.editor.extension'"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-editor.action.webvieweditor.showFind",
+        "when": "webviewFindWidgetEnabled && !editorFocus && activeEditor == 'WebviewEditor'"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-extension.vim_ctrl+f",
+        "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-keybindings.editor.searchKeybindings",
+        "when": "inKeybindings"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-problems.action.focusFilter",
+        "when": "focusedView == 'workbench.panel.markers.view'"
+    },
+    // ================================================================================
+    // Focus next word in Search Workspace (ctrl+j)
+    // ================================================================================
+    {
+        "key": "f4",
+        "command": "-search.action.focusNextSearchResult",
+        "when": "hasSearchResult || inSearchEditor"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "search.action.focusNextSearchResult",
+        "when": "hasSearchResult || inSearchEditor"
+    },
+    // ================================================================================
+    // Focus previous word in Search Workspace (ctrl+k)
+    // ================================================================================
+    {
+        "key": "shift+f4",
+        "command": "-search.action.focusPreviousSearchResult",
+        "when": "hasSearchResult || inSearchEditor"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "search.action.focusPreviousSearchResult",
+        "when": "hasSearchResult || inSearchEditor"
     },
 ]
