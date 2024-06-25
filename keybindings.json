@@ -5,7 +5,7 @@
     {
         "key": "ctrl+\\",
         "command": "workbench.files.action.focusFilesExplorer",
-        "when": "editorFocus && explorerViewletVisible"
+        "when": "!explorerViewletFocus && explorerViewletVisible"
     },
     {
         "key": "ctrl+\\",
@@ -15,7 +15,7 @@
     {
         "key": "ctrl+\\",
         "command": "workbench.view.explorer",
-        "when": "editorFocus && !explorerViewletVisible"
+        "when": "!explorerViewletFocus && !explorerViewletVisible"
     },
     {
         "key": "ctrl+\\",
