@@ -297,7 +297,7 @@
     {
         "key": "ctrl+j",
         "command": "search.action.focusNextSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
+        "when": "!explorerViewletFocus && (hasSearchResult || inSearchEditor)"
     },
     {
         "key": "ctrl+j",
@@ -319,7 +319,7 @@
     {
         "key": "ctrl+k",
         "command": "search.action.focusPreviousSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
+        "when": "!explorerViewletFocus && (hasSearchResult || inSearchEditor)"
     },
     {
         "key": "ctrl+k",
