@@ -80,8 +80,8 @@
         "<C-p>": false,     // Fuzzy Find (ctrl+p)
         // Custom Hotkeys
         "<C-\\>": false,    // Open Explorer (ctrl+\)
-        "<C-h>": false,     // Previous Tab (ctrl+h)
-        "<C-l>": false,     // Next Tab (ctrl+l)
+        "<C-h>": false,     // Previous Tab on Terminal or Editor (ctrl+h)
+        "<C-l>": false,     // Next Tab on Terminal or Editor (ctrl+l)
         "<C-z>": false,     // Toggle Full Screen Terminal  (ctrl+z)
         "<C-s>": false,     // Save File (ctrl+s)
         "<C-q>": false,     // Close all Editors (ctrl+q)
@@ -89,6 +89,7 @@
         "<C-f>": false,     // Search Workspace (ctrl+f)
         "<C-j>": false,     // Focus next word in Search Workspace (ctrl+j)
         "<C-k>": false,     // Focus previous word in Search Workspace (ctrl+k)
+        "<C-n>": false,     // Create new Terminal or Editor (ctrl+n)
     },
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
@@ -142,5 +143,5 @@
     "telemetry.telemetryLevel": "off",
     "security.allowedUNCHosts": [
         "wsl.localhost"
-    ],
+    ]
 }

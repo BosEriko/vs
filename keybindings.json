@@ -22,7 +22,7 @@
         "command": "-workbench.action.splitEditor"
     },
     // ================================================================================
-    // Previous Tab (ctrl+h)
+    // Previous Tab on Terminal or Editor (ctrl+h)
     // ================================================================================
     {
         "key": "ctrl+h",
@@ -55,7 +55,7 @@
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
     },
     // ================================================================================
-    // Next Tab (ctrl+l)
+    // Next Tab on Terminal or Editor (ctrl+l)
     // ================================================================================
     {
         "key": "ctrl+l",
@@ -325,5 +325,23 @@
         "key": "ctrl+k",
         "command": "-extension.vim_ctrl+k",
         "when": "editorTextFocus && vim.active && vim.use<C-k> && !inDebugRepl"
+    },
+    // ================================================================================
+    // Create new Terminal or Editor (ctrl+n)
+    // ================================================================================
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus && (terminalProcessSupported || terminalWebExtensionContributedProfile)"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-extension.vim_ctrl+n",
+        "when": "editorTextFocus && vim.active && vim.use<C-n> && !inDebugRepl || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
     }
 ]
