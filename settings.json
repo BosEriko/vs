@@ -35,7 +35,8 @@
         ".sidebar": "border: none !important",
         ".shell-integration.integrated-terminal .tabs-list-container": "margin: 5px !important;",
         ".shell-integration.integrated-terminal .monaco-list-row": "border-radius: 5px !important;",
-        ".shell-integration.integrated-terminal .monaco-list-row.selected": "background-color: rgba(0,0,0,.35) !important; border: none !important;"
+        ".shell-integration.integrated-terminal .monaco-list-row.selected": "background-color: rgba(0,0,0,.35) !important; border: none !important;",
+        ".quick-input-widget .quick-input-titlebar": "display: none !important"
     },
     // ================================================================================
     // Theme & UI Settings
