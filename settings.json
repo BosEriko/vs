@@ -62,9 +62,6 @@
     "window.commandCenter": false,
     "editor.renderWhitespace": "none",
     "workbench.statusBar.visible": false,
-    "editor.rulers": [
-        100
-    ],
     "workbench.colorCustomizations": {
         "scrollbar.shadow": "#ffffff00",
         "widget.shadow": "#ffffff00",
@@ -72,7 +69,7 @@
         "focusBorder": "#ffffff00"
     },
     // ================================================================================
-    // ANCHOR: Vim
+    // Vim
     // ================================================================================
     "editor.lineNumbers": "relative",
     "vim.useSystemClipboard": true,
@@ -82,7 +79,7 @@
         "vscodevim.vim": 1
     },
     // ================================================================================
-    // ANCHOR: Vim Hotkeys
+    // Vim Hotkeys
     // ================================================================================
     "vim.leader": "<space>",
     "vim.handleKeys": {
@@ -192,7 +189,7 @@
         }
     ],
     // ================================================================================
-    // ANCHOR: Terminal
+    // Terminal
     // ================================================================================
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
@@ -220,7 +217,7 @@
     },
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     // ================================================================================
-    // ANCHOR: Settings
+    // Settings
     // ================================================================================
     "telemetry.telemetryLevel": "off",
     "window.confirmSaveUntitledWorkspace": false,
