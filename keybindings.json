@@ -26,7 +26,8 @@
     // ================================================================================
     {
         "key": "ctrl+h",
-        "command": "workbench.action.previousEditorInGroup"
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "!terminalFocus"
     },
     {
         "key": "ctrl+h",
@@ -38,12 +39,28 @@
         "command": "-extension.vim_ctrl+h",
         "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
     },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+up",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+left",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
     // ================================================================================
     // Next Tab (ctrl+l)
     // ================================================================================
     {
         "key": "ctrl+l",
-        "command": "workbench.action.nextEditorInGroup"
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "!terminalFocus"
     },
     {
         "key": "ctrl+l",
@@ -64,6 +81,21 @@
         "key": "ctrl+l",
         "command": "-expandLineSelection",
         "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+down",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+right",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     // ================================================================================
     // Toggle Full Screen Terminal  (ctrl+z)
