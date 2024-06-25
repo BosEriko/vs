@@ -90,6 +90,7 @@
         "<C-k>": false,     // Focus previous word in Search Workspace (ctrl+k)
         "<C-n>": false,     // Create new Terminal or Editor (ctrl+n)
         "<C-w>": false,     // Close Terminal or Editor (ctrl+w)
+        "<C-g>": false,     // Search and Replace (ctrl+g)
     },
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1

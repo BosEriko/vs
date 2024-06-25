@@ -361,5 +361,26 @@
         "key": "ctrl+w",
         "command": "-workbench.action.closeGroup",
         "when": "activeEditorGroupEmpty && multipleEditorGroups"
+    },
+    // ================================================================================
+    // Search and Replace (ctrl+g)
+    // ================================================================================
+    {
+        "key": "ctrl+g",
+        "command": "editor.action.startFindReplaceAction"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-extension.vim_ctrl+g",
+        "when": "editorTextFocus && vim.active && vim.use<C-g> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.terminal.goToRecentDirectory",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
     }
 ]
