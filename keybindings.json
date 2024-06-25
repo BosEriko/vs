@@ -1,6 +1,6 @@
 [
     // ================================================================================
-    // Open Explorer (ctrl+\)
+    // ANCHOR: Open Explorer (ctrl+\)
     // ================================================================================
     {
         "key": "ctrl+\\",
@@ -22,7 +22,7 @@
         "command": "-workbench.action.splitEditor"
     },
     // ================================================================================
-    // Previous Tab on Editor (ctrl+h)
+    // ANCHOR: Previous Tab on Editor (ctrl+h)
     // ================================================================================
     {
         "key": "ctrl+h",
@@ -45,7 +45,7 @@
         "when": "whichkeyVisible"
     },
     // ================================================================================
-    // Next Tab on Editor (ctrl+l)
+    // ANCHOR: Next Tab on Editor (ctrl+l)
     // ================================================================================
     {
         "key": "ctrl+l",
@@ -78,7 +78,7 @@
         "when": "chatIsEnabled && inChat"
     },
     // ================================================================================
-    // Toggle Full Screen Terminal  (ctrl+z)
+    // ANCHOR: Toggle Full Screen Terminal  (ctrl+z)
     // ================================================================================
     {
         "key": "ctrl+z",
@@ -105,7 +105,7 @@
         "command": "-undo"
     },
     // ================================================================================
-    // Save File (ctrl+s)
+    // ANCHOR: Save File (ctrl+s)
     // ================================================================================
     {
         "key": "ctrl+s",
@@ -125,7 +125,7 @@
         "when": "editorTextFocus && vim.active && vim.use<C-s> && !inDebugRepl"
     },
     // ================================================================================
-    // Close all Editors or Open Folder (ctrl+q)
+    // ANCHOR: Close all Editors or Open Folder (ctrl+q)
     // ================================================================================
     {
         "key": "ctrl+q",
@@ -161,7 +161,7 @@
         "command": "-workbench.action.quickOpenView"
     },
     // ================================================================================
-    // Copy Relative Path (ctrl+b)
+    // ANCHOR: Copy Relative Path (ctrl+b)
     // ================================================================================
     {
         "key": "ctrl+b",
@@ -182,7 +182,7 @@
         "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
     },
     // ================================================================================
-    // Search Workspace (ctrl+f)
+    // ANCHOR: Search Workspace (ctrl+f)
     // ================================================================================
     {
         "key": "ctrl+f",
@@ -278,7 +278,7 @@
         "when": "focusedView == 'workbench.panel.markers.view'"
     },
     // ================================================================================
-    // Focus next word in Search Workspace and Next Tab on Terminal (ctrl+j)
+    // ANCHOR: Focus next word in Search Workspace and Next Tab on Terminal (ctrl+j)
     // ================================================================================
     {
         "key": "ctrl+j",
@@ -310,7 +310,7 @@
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
     },
     // ================================================================================
-    // Focus previous word in Search Workspace and Previous Tab on Terminal (ctrl+k)
+    // ANCHOR: Focus previous word in Search Workspace and Previous Tab on Terminal (ctrl+k)
     // ================================================================================
     {
         "key": "ctrl+k",
@@ -338,7 +338,7 @@
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
     },
     // ================================================================================
-    // Create new Terminal or Editor (ctrl+n)
+    // ANCHOR: Create new Terminal or Editor (ctrl+n)
     // ================================================================================
     {
         "key": "ctrl+n",
@@ -356,7 +356,7 @@
         "when": "editorTextFocus && vim.active && vim.use<C-n> && !inDebugRepl || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
     },
     // ================================================================================
-    // Close Terminal or Editor (ctrl+w)
+    // ANCHOR: Close Terminal or Editor (ctrl+w)
     // ================================================================================
     {
         "key": "ctrl+w",
@@ -374,7 +374,7 @@
         "when": "activeEditorGroupEmpty && multipleEditorGroups"
     },
     // ================================================================================
-    // Search and Replace (ctrl+g)
+    // ANCHOR: Search and Replace (ctrl+g)
     // ================================================================================
     {
         "key": "ctrl+g",
@@ -395,7 +395,7 @@
         "command": "-workbench.action.gotoLine"
     },
     // ================================================================================
-    // Toggle Comment (ctrl+c)
+    // ANCHOR: Toggle Comment (ctrl+c)
     // ================================================================================
     {
         "key": "ctrl+c",
@@ -431,5 +431,53 @@
         "key": "ctrl+c",
         "command": "-search.action.copyMatch",
         "when": "fileMatchOrMatchFocus"
+    },
+    // ================================================================================
+    // ANCHOR: File Explorer: Create File (a)
+    // ================================================================================
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus && foldersViewVisible"
+    },
+    // ================================================================================
+    // ANCHOR: File Explorer: Copy File (c)
+    // ================================================================================
+    {
+        "key": "c",
+        "command": "filesExplorer.copy",
+        "when": "filesExplorerFocus && foldersViewVisible"
+    },
+    // ================================================================================
+    // ANCHOR: File Explorer: Cut File (x)
+    // ================================================================================
+    {
+        "key": "x",
+        "command": "filesExplorer.cut",
+        "when": "filesExplorerFocus && foldersViewVisible"
+    },
+    // ================================================================================
+    // ANCHOR: File Explorer: Paste File (v)
+    // ================================================================================
+    {
+        "key": "v",
+        "command": "filesExplorer.paste",
+        "when": "filesExplorerFocus && foldersViewVisible"
+    },
+    // ================================================================================
+    // ANCHOR: File Explorer: Rename File (r)
+    // ================================================================================
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "filesExplorerFocus && foldersViewVisible"
+    },
+    // ================================================================================
+    // ANCHOR: File Explorer: Delete File (d)
+    // ================================================================================
+    {
+        "key": "d",
+        "command": "moveFileToTrash",
+        "when": "filesExplorerFocus && foldersViewVisible"
     }
 ]

@@ -1,6 +1,6 @@
 {
     // ================================================================================
-    // APC - UI Customizer
+    // ANCHOR: APC - UI Customizer
     // ================================================================================
     "apc.menubar.compact": true,
     "apc.electron": {
@@ -39,7 +39,7 @@
         ".quick-input-widget .quick-input-titlebar": "display: none !important"
     },
     // ================================================================================
-    // Theme & UI Settings
+    // ANCHOR: Theme & UI Settings
     // ================================================================================
     "window.title": "Editor",
     "workbench.colorTheme": "poimandres",
@@ -72,7 +72,7 @@
         "focusBorder": "#ffffff00"
     },
     // ================================================================================
-    // Vim
+    // ANCHOR: Vim
     // ================================================================================
     "editor.lineNumbers": "relative",
     "vim.useSystemClipboard": true,
@@ -82,7 +82,7 @@
         "vscodevim.vim": 1
     },
     // ================================================================================
-    // Vim Hotkeys
+    // ANCHOR: Vim Hotkeys
     // ================================================================================
     "vim.leader": "<space>",
     "vim.handleKeys": {
@@ -192,7 +192,7 @@
         }
     ],
     // ================================================================================
-    // Terminal
+    // ANCHOR: Terminal
     // ================================================================================
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
@@ -220,7 +220,7 @@
     },
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     // ================================================================================
-    // Settings
+    // ANCHOR: Settings
     // ================================================================================
     "telemetry.telemetryLevel": "off",
     "window.confirmSaveUntitledWorkspace": false,
