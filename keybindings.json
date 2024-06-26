@@ -8,8 +8,8 @@
 // Close all Editors or Open Folder (ctrl+q)                                            //
 // Copy Relative Path (ctrl+b)                                                          //
 // Search Workspace (ctrl+f)                                                            //
-// Focus next word in Search Workspace and Next Tab on Terminal (ctrl+j)                //
-// Focus previous word in Search Workspace and Previous Tab on Terminal (ctrl+k)        //
+// Go down in search workspace, terminal pane or quick open (ctrl+j)                    //
+// Go up in search workspace, terminal pane or quick open (ctrl+k)                      //
 // Create new Terminal or Editor (ctrl+n)                                               //
 // Close Terminal or Editor (ctrl+w)                                                    //
 // Search and Replace (ctrl+g)                                                          //
@@ -303,7 +303,7 @@
         "when": "focusedView == 'workbench.panel.markers.view'"
     },
     // ================================================================================
-    // Focus next word in Search Workspace and Next Tab on Terminal (ctrl+j)
+    // Go down in search workspace, terminal pane or quick open (ctrl+j)
     // ================================================================================
     {
         "key": "ctrl+j",
@@ -314,6 +314,11 @@
         "key": "ctrl+j",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
     },
     {
         "key": "f4",
@@ -335,7 +340,7 @@
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
     },
     // ================================================================================
-    // Focus previous word in Search Workspace and Previous Tab on Terminal (ctrl+k)
+    // Go up in search workspace, terminal pane or quick open (ctrl+k)
     // ================================================================================
     {
         "key": "ctrl+k",
@@ -346,6 +351,11 @@
         "key": "ctrl+k",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inQuickOpen"
     },
     {
         "key": "ctrl+k ctrl+k",
