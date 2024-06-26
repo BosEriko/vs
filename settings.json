@@ -19,7 +19,7 @@
         "itemMargin": 0
     },
     "apc.stylesheet": {
-        ".editor-group-watermark .letterpress": "background-image: url('https://raw.githubusercontent.com/BosEriko/vs/master/wallpaper.gif') !important",
+        ".editor-group-watermark .letterpress": "background-image: url('https://raw.githubusercontent.com/BosEriko/vs/master/logo.png') !important",
         ".title-label": "display: none !important",
         ".editor-actions": "display: none !important",
         ".composite.title": "display: none !important",
