@@ -140,12 +140,6 @@
     ],
     "whichkey.bindings": [
         {
-            "key": "n",
-            "name": "Remove highlighted text",
-            "type": "command",
-            "command": "vim.editors.nohlsearch"
-        },
-        {
             "key": "l",
             "name": "Toggle display of hidden characters",
             "type": "command",
