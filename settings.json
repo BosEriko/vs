@@ -20,6 +20,7 @@
     },
     "apc.stylesheet": {
         ".editor-group-watermark .letterpress": "background-image: url('https://raw.githubusercontent.com/BosEriko/vs/master/logo.png') !important",
+        ".editor-group-watermark .shortcuts": "display: none !important",
         ".title-label": "display: none !important",
         ".editor-actions": "display: none !important",
         ".composite.title": "display: none !important",
