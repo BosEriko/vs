@@ -23,7 +23,6 @@
 // File Explorer: Remove Folder from Workspace (w)                                      //
 //                                                                                      //
 // ==================================================================================== //
-
 [
     // ================================================================================
     // Open Explorer (ctrl+\)
@@ -309,7 +308,7 @@
     {
         "key": "ctrl+j",
         "command": "search.action.focusNextSearchResult",
-        "when": "!terminalFocus && !explorerViewletFocus && (hasSearchResult || inSearchEditor)"
+        "when": "searchViewletVisible && !terminalFocus && !explorerViewletFocus && (hasSearchResult || inSearchEditor)"
     },
     {
         "key": "ctrl+j",
@@ -341,12 +340,17 @@
     {
         "key": "ctrl+k",
         "command": "search.action.focusPreviousSearchResult",
-        "when": "!terminalFocus && !explorerViewletFocus && (hasSearchResult || inSearchEditor)"
+        "when": "searchViewletVisible && !terminalFocus && !explorerViewletFocus && (hasSearchResult || inSearchEditor)"
     },
     {
         "key": "ctrl+k",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+k",
+        "command": "-extension.devDocs",
+        "when": "editorTextFocus"
     },
     {
         "key": "shift+f4",
@@ -434,6 +438,16 @@
     // ================================================================================
     // Toggle Comment (ctrl+c)
     // ================================================================================
+    {
+        "key": "ctrl+c",
+        "command": "editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+c",
+        "command": "-editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
     {
         "key": "ctrl+c",
         "command": "-workbench.action.terminal.copyAndClearSelection",
