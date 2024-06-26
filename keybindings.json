@@ -161,7 +161,7 @@
     {
         "key": "ctrl+q",
         "command": "workbench.action.files.openFolder",
-        "when": "!editorTextFocus"
+        "when": "!editorTextFocus && !terminalFocus && !explorerViewletFocus && !findInputFocussed && !replaceInputFocussed"
     },
     {
         "key": "ctrl+k ctrl+o",
