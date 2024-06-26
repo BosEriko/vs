@@ -404,7 +404,18 @@
     // ================================================================================
     {
         "key": "ctrl+g",
-        "command": "editor.action.startFindReplaceAction"
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorTextFocus && !findWidgetVisible"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "actions.find",
+        "when": "editorTextFocus && findWidgetVisible"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "closeFindWidget",
+        "when": "findInputFocussed || replaceInputFocussed"
     },
     {
         "key": "ctrl+g",
@@ -472,7 +483,7 @@
     {
         "key": "c",
         "command": "filesExplorer.copy",
-        "when": "filesExplorerFocus"
+        "when": "filesExplorerFocus && !inputFocus"
     },
     // ================================================================================
     // File Explorer: Cut File (x)
@@ -480,7 +491,7 @@
     {
         "key": "x",
         "command": "filesExplorer.cut",
-        "when": "filesExplorerFocus"
+        "when": "filesExplorerFocus && !inputFocus"
     },
     // ================================================================================
     // File Explorer: Paste File (v)
@@ -488,7 +499,7 @@
     {
         "key": "v",
         "command": "filesExplorer.paste",
-        "when": "filesExplorerFocus"
+        "when": "filesExplorerFocus && !inputFocus"
     },
     // ================================================================================
     // File Explorer: Rename File (r)
@@ -496,7 +507,7 @@
     {
         "key": "r",
         "command": "renameFile",
-        "when": "filesExplorerFocus"
+        "when": "filesExplorerFocus && !inputFocus"
     },
     // ================================================================================
     // File Explorer: Delete File (d)
@@ -504,7 +515,7 @@
     {
         "key": "d",
         "command": "moveFileToTrash",
-        "when": "filesExplorerFocus"
+        "when": "filesExplorerFocus && !inputFocus"
     },
     // ================================================================================
     // File Explorer: Remove Folder from Workspace (w)
@@ -512,6 +523,6 @@
     {
         "key": "w",
         "command": "workbench.action.removeRootFolder",
-        "when": "filesExplorerFocus"
+        "when": "filesExplorerFocus && !inputFocus"
     }
 ]
