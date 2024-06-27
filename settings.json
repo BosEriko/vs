@@ -84,13 +84,13 @@
     "editor.lineNumbers": "relative",
     "vim.useSystemClipboard": true,
     "vim.easymotion": true,
-    "vim.easymotionKeys": "asdfjkl;",
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
     },
     // ================================================================================
     // Vim Hotkeys
     // ================================================================================
+    "vim.easymotionKeys": "asdfjkl;",
     "vim.leader": "<space>",
     "vim.handleKeys": {
         // Default Hotkeys
