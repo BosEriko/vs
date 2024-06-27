@@ -424,7 +424,7 @@
     {
         "key": "ctrl+g",
         "command": "actions.find",
-        "when": "editorTextFocus && findWidgetVisible"
+        "when": "findWidgetVisible"
     },
     {
         "key": "ctrl+g",
