@@ -19,25 +19,34 @@
         "itemMargin": 0
     },
     "apc.stylesheet": {
-        ".editor-group-watermark .letterpress": "background-image: url('https://raw.githubusercontent.com/BosEriko/vs/master/logo.png') !important",
-        ".editor-group-watermark .shortcuts": "display: none !important",
+        // Sidebar Style
+        ".monaco-list::before": "display: none !important",
+        ".monaco-workbench .part.sidebar .title-actions .actions-container": "justify-content: space-evenly !important",
+        ".monaco-workbench ::selection": "background-color: none !important",
+        ".sidebar": "border: none !important",
+        // Sidebar Title
         ".title-label": "display: none !important",
+        // Sidebar Positioning
+        ".explorer-folders-view": "margin-top: 30px !important",
+        // Editor and Explorer Top Right Menu
         ".editor-actions": "display: none !important",
         ".composite.title": "display: none !important",
+        // Scroll Decorations (Error, Warning, etc.)
+        ".decorationsOverviewRuler": "display: none !important",
+        // Command Input on Quick Open
+        ".quick-input-widget .quick-input-titlebar": "display: none !important",
+        // Editor Tabs
         ".tab": "background-color: rgba(255,255,255,.0) !important; border: none !important; margin-right: 5px !important; border-radius: 10px;",
         ".tab.active.selected": "background-color: rgba(0,0,0,.35) !important; border: none !important;",
         ".tabs": "background-color: rgba(255,255,255,.0) !important; margin: 5px;",
         ".tabs-and-actions-container": "background-color: none !important",
-        ".explorer-folders-view": "margin-top: 30px !important",
-        ".monaco-list::before": "display: none !important",
-        ".monaco-workbench .part.sidebar .title-actions .actions-container": "justify-content: space-evenly !important",
-        ".monaco-workbench ::selection": "background-color: none !important",
-        ".decorationsOverviewRuler": "display: none !important",
-        ".sidebar": "border: none !important",
+        // Terminal Tabs
         ".shell-integration.integrated-terminal .tabs-list-container": "margin: 5px !important;",
         ".shell-integration.integrated-terminal .monaco-list-row": "border-radius: 5px !important;",
         ".shell-integration.integrated-terminal .monaco-list-row.selected": "background-color: rgba(0,0,0,.35) !important; border: none !important;",
-        ".quick-input-widget .quick-input-titlebar": "display: none !important"
+        // Homepage UI
+        ".editor-group-watermark .letterpress": "background-image: url('https://raw.githubusercontent.com/BosEriko/vs/master/logo.png') !important",
+        ".editor-group-watermark .shortcuts": "display: none !important"
     },
     // ================================================================================
     // Theme & UI Settings
