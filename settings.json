@@ -31,8 +31,10 @@
         // Editor and Explorer Top Right Menu
         ".editor-actions": "display: none !important",
         ".composite.title": "display: none !important",
-        // Scroll Decorations (Error, Warning, etc.)
+        // Scroll Decorations on Editor (Error, Warning, etc.)
         ".decorationsOverviewRuler": "display: none !important",
+        // Scroll Decorations on Terminal (Error, Warning, etc.)
+        ".xterm-decoration-overview-ruler": "display: none !important",
         // Command Input on Quick Open
         ".quick-input-widget .quick-input-titlebar": "display: none !important",
         // Editor Tabs
@@ -208,7 +210,7 @@
     // ================================================================================
     // Settings
     // ================================================================================
-    "explorer.excludeGitIgnore": true,
+    "explorer.excludeGitIgnore": false,
     "telemetry.telemetryLevel": "off",
     "window.confirmSaveUntitledWorkspace": false,
     "security.allowedUNCHosts": [
