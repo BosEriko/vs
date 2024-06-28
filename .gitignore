@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!extensions.sh
+!keybindings.json
+!logo.png
+!README.md
+!settings.json
