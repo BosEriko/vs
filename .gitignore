@@ -4,6 +4,7 @@
 # But not these files...
 !.gitignore
 !extensions.sh
+!install.sh
 !keybindings.json
 !logo.png
 !README.md

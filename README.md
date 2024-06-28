@@ -7,10 +7,13 @@ scoop bucket add extras
 scoop install extras/vscode
 ```
 
-## Update Configuration
-1. [Install your extensions](extensions.sh)
-2. [Update your settings.json](settings.json)
-3. [Update your keybindings.json](keybindings.json)
+## Sync your settings
+Go to the folder where the current `settings.json` and `keybindings.json` are located and run the following script.
+```sh
+curl -fsSL https://raw.githubusercontent.com/BosEriko/vs/HEAD/install.sh | sh
+```
+
+_Note: If you're having a hard time locating the folder you can easily get it by pressing `Ctrl`+`Shift`+`P` to `Show All Commands`. Then on the list select `Preferences: Open User Settings (JSON)` then `File: Copy Relative Path of Active File`._
 
 ## Update Default Profile
 If you have a [Virtual Machine](https://github.com/BosEriko/wsl) set up, update your default terminal profile by pressing `Ctrl`+`Shift`+`P` to `Show All Commands`. Then on the list select `Terminal: Select Default Profile` and choose the [Distro](https://github.com/BosEriko/ubuntu) of your choice.
