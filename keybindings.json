@@ -15,9 +15,9 @@
 // Search and Replace (ctrl+g)                                                          //
 // Toggle Comment (ctrl+c)                                                              //
 // File Explorer: Create File (a)                                                       //
-// File Explorer: Copy File (c)                                                         //
+// File Explorer: Copy File (y)                                                         //
 // File Explorer: Cut File (x)                                                          //
-// File Explorer: Paste File (v)                                                        //
+// File Explorer: Paste File (p)                                                        //
 // File Explorer: Rename File (r)                                                       //
 // File Explorer: Delete File (d)                                                       //
 // File Explorer: Remove Folder from Workspace (w)                                      //
@@ -450,7 +450,7 @@
     // ================================================================================
     {
         "key": "ctrl+c",
-        "command": "editor.action.addCommentLine",
+        "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
@@ -502,10 +502,10 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     // ================================================================================
-    // File Explorer: Copy File (c)
+    // File Explorer: Copy File (y)
     // ================================================================================
     {
-        "key": "c",
+        "key": "y",
         "command": "filesExplorer.copy",
         "when": "filesExplorerFocus && !inputFocus"
     },
@@ -518,10 +518,10 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     // ================================================================================
-    // File Explorer: Paste File (v)
+    // File Explorer: Paste File (p)
     // ================================================================================
     {
-        "key": "v",
+        "key": "p",
         "command": "filesExplorer.paste",
         "when": "filesExplorerFocus && !inputFocus"
     },
