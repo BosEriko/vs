@@ -73,6 +73,7 @@
     "workbench.activityBar.location": "hidden",
     "window.commandCenter": false,
     "editor.renderWhitespace": "none",
+    "terminal.integrated.tabs.enabled": false,
     "workbench.statusBar.visible": false,
     "workbench.colorCustomizations": {
         "scrollbar.shadow": "#ffffff00",
