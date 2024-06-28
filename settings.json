@@ -208,6 +208,7 @@
     // ================================================================================
     // Settings
     // ================================================================================
+    "explorer.excludeGitIgnore": true,
     "telemetry.telemetryLevel": "off",
     "window.confirmSaveUntitledWorkspace": false,
     "security.allowedUNCHosts": [
