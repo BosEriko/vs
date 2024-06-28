@@ -199,15 +199,15 @@
     // Terminal
     // ================================================================================
     "terminal.integrated.profiles.windows": {
-        "Debian (WSL)": {
+        "Ubuntu (WSL)": {
             "path": "C:\\WINDOWS\\System32\\wsl.exe",
             "args": [
                 "-d",
-                "Debian"
+                "Ubuntu"
             ]
         }
     },
-    "terminal.integrated.defaultProfile.windows": "Debian (WSL)",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     // ================================================================================
     // Settings
     // ================================================================================
