@@ -196,15 +196,15 @@
     // Terminal
     // ================================================================================
     "terminal.integrated.profiles.windows": {
-        "NixOS (WSL)": {
+        "Debian (WSL)": {
             "path": "C:\\WINDOWS\\System32\\wsl.exe",
             "args": [
                 "-d",
-                "NixOS"
+                "Debian"
             ]
         }
     },
-    "terminal.integrated.defaultProfile.windows": "NixOS (WSL)",
+    "terminal.integrated.defaultProfile.windows": "Debian (WSL)",
     // ================================================================================
     // Settings
     // ================================================================================
