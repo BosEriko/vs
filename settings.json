@@ -201,7 +201,7 @@
                 },
                 {
                     "key": "l",
-                    "name": "Toggle display of hidden characters",
+                    "name": "Hidden Characters",
                     "type": "command",
                     "command": "editor.action.toggleRenderWhitespace"
                 }
