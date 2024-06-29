@@ -10,8 +10,8 @@
 // Search Workspace (ctrl+f)                                                            //
 // Go down in search workspace, suggestion, terminal pane or quick open (ctrl+j)        //
 // Go up in search workspace, suggestion, terminal pane or quick open (ctrl+k)          //
-// Terminal: Scroll Down (ctrl+alt+j)                                                   //
-// Terminal: Scroll Up (ctrl+alt+k)                                                     //
+// Terminal: Scroll Down (ctrl+alt+d)                                                   //
+// Terminal: Scroll Up (ctrl+alt+u)                                                     //
 // Create new Terminal or Editor (ctrl+n)                                               //
 // Close Terminal or Editor (ctrl+w)                                                    //
 // Search and Replace (ctrl+g)                                                          //
@@ -400,10 +400,10 @@
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
     },
     // ================================================================================
-    // Terminal: Scroll Down (ctrl+alt+j)
+    // Terminal: Scroll Down (ctrl+alt+d)
     // ================================================================================
     {
-        "key": "ctrl+alt+j",
+        "key": "ctrl+alt+d",
         "command": "workbench.action.terminal.scrollDownPage",
         "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
     },
@@ -412,16 +412,11 @@
         "command": "-workbench.action.terminal.scrollDownPage",
         "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
     },
-    {
-        "key": "ctrl+alt+j",
-        "command": "-liveshare.join",
-        "when": "liveshare:state != 'Joined' && liveshare:state != 'Shared'"
-    },
     // ================================================================================
-    // Terminal: Scroll Up (ctrl+alt+k)
+    // Terminal: Scroll Up (ctrl+alt+u)
     // ================================================================================
     {
-        "key": "ctrl+alt+k",
+        "key": "ctrl+alt+u",
         "command": "workbench.action.terminal.scrollUpPage",
         "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
     },
