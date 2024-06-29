@@ -211,6 +211,7 @@
     // ================================================================================
     // Settings
     // ================================================================================
+    "extensions.ignoreRecommendations": true,
     "explorer.excludeGitIgnore": true,
     "telemetry.telemetryLevel": "off",
     "window.confirmSaveUntitledWorkspace": false,
