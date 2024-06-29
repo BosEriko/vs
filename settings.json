@@ -152,10 +152,10 @@
     ],
     "whichkey.bindings": [
         {
-            "key": "l",
-            "name": "Toggle display of hidden characters",
+            "key": "d",
+            "name": "Search Devdocs on cursor position",
             "type": "command",
-            "command": "editor.action.toggleRenderWhitespace"
+            "command": "extension.devDocs"
         },
         {
             "key": "r",
@@ -165,7 +165,7 @@
         },
         {
             "key": "s",
-            "name": "Sort lines by...",
+            "name": "Sort lines",
             "type": "command",
             "bindings": [
                 {
@@ -183,16 +183,29 @@
             ]
         },
         {
-            "key": "d",
-            "name": "Search Devdocs on cursor position",
+            "key": "t",
+            "name": "Toggle settings",
             "type": "command",
-            "command": "extension.devDocs"
-        },
-        {
-            "key": "w",
-            "name": "Toggle text wrap",
-            "type": "command",
-            "command": "editor.action.toggleWordWrap"
+            "bindings": [
+                {
+                    "key": "s",
+                    "name": "Status Wrap",
+                    "type": "command",
+                    "command": "workbench.action.toggleStatusbarVisibility"
+                },
+                {
+                    "key": "w",
+                    "name": "Text Wrap",
+                    "type": "command",
+                    "command": "editor.action.toggleWordWrap"
+                },
+                {
+                    "key": "l",
+                    "name": "Toggle display of hidden characters",
+                    "type": "command",
+                    "command": "editor.action.toggleRenderWhitespace"
+                }
+            ]
         }
     ],
     // ================================================================================
