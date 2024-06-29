@@ -8,8 +8,8 @@
 // Close all Editors or Open Folder (ctrl+q)                                            //
 // Copy Relative Path (ctrl+b)                                                          //
 // Search Workspace (ctrl+f)                                                            //
-// Go down in search workspace, terminal pane or quick open (ctrl+j)                    //
-// Go up in search workspace, terminal pane or quick open (ctrl+k)                      //
+// Go down in search workspace, suggestion, terminal pane or quick open (ctrl+j)        //
+// Go up in search workspace, suggestion, terminal pane or quick open (ctrl+k)          //
 // Create new Terminal or Editor (ctrl+n)                                               //
 // Close Terminal or Editor (ctrl+w)                                                    //
 // Search and Replace (ctrl+g)                                                          //
@@ -303,7 +303,7 @@
         "when": "focusedView == 'workbench.panel.markers.view'"
     },
     // ================================================================================
-    // Go down in search workspace, terminal pane or quick open (ctrl+j)
+    // Go down in search workspace, suggestion, terminal pane or quick open (ctrl+j)
     // ================================================================================
     {
         "key": "ctrl+j",
@@ -319,6 +319,11 @@
         "key": "ctrl+j",
         "command": "workbench.action.quickOpenNavigateNext",
         "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
     },
     {
         "key": "f4",
@@ -339,8 +344,13 @@
         "command": "-workbench.action.terminal.focusNext",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
     },
+    {
+        "key": "down",
+        "command": "-selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
     // ================================================================================
-    // Go up in search workspace, terminal pane or quick open (ctrl+k)
+    // Go up in search workspace, suggestion, terminal pane or quick open (ctrl+k)
     // ================================================================================
     {
         "key": "ctrl+k",
@@ -356,6 +366,11 @@
         "key": "ctrl+k",
         "command": "workbench.action.quickOpenNavigatePrevious",
         "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
     },
     {
         "key": "ctrl+k ctrl+k",
@@ -376,6 +391,11 @@
         "key": "ctrl+pageup",
         "command": "-workbench.action.terminal.focusPrevious",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "up",
+        "command": "-selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
     },
     // ================================================================================
     // Create new Terminal or Editor (ctrl+n)
