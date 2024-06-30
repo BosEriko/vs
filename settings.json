@@ -230,6 +230,7 @@
     "explorer.excludeGitIgnore": true,
     "telemetry.telemetryLevel": "off",
     "window.confirmSaveUntitledWorkspace": false,
+    "git.openRepositoryInParentFolders": "never",
     "security.allowedUNCHosts": [
         "wsl.localhost"
     ]
