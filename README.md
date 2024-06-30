@@ -7,6 +7,12 @@ scoop bucket add extras
 scoop install extras/vscode
 ```
 
+## Install Font
+```sh
+scoop bucket add nerd-fonts
+scoop install nerd-fonts/JetBrainsMono-NF-Mono
+```
+
 ## Sync your settings
 Go to the folder where the current `settings.json` and `keybindings.json` are located and run the following script.
 ```sh
