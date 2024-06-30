@@ -1,34 +1,34 @@
 // ================================== LIST OF KEYS ==================================== //
 //                                                                                      //
-// Open Explorer (ctrl+\)                                                               //
-// Open Keyboard Cheat Sheet (ctrl+k)                                                   //
-// Previous Tab on Editor (ctrl+h)                                                      //
-// Next Tab on Editor (ctrl+l)                                                          //
-// Toggle Full Screen Terminal  (ctrl+z)                                                //
-// Save File (ctrl+s)                                                                   //
-// Close all Editors or Open Folder (ctrl+q)                                            //
-// Copy Relative Path (ctrl+b)                                                          //
-// Search Workspace (ctrl+f)                                                            //
-// Go down in search workspace, suggestion, terminal pane or quick open (ctrl+j)        //
-// Go up in search workspace, suggestion, terminal pane or quick open (ctrl+k)          //
-// Terminal: Scroll Down (ctrl+d)                                                       //
-// Terminal: Scroll Up (ctrl+u)                                                         //
-// Create new Terminal or Editor (ctrl+n)                                               //
-// Close Terminal or Editor (ctrl+w)                                                    //
-// Search and Replace (ctrl+g)                                                          //
-// Toggle Comment (ctrl+c)                                                              //
-// File Explorer: Create File (a)                                                       //
-// File Explorer: Copy File (y)                                                         //
-// File Explorer: Cut File (x)                                                          //
-// File Explorer: Paste File (p)                                                        //
-// File Explorer: Rename File (r)                                                       //
-// File Explorer: Delete File (d)                                                       //
-// File Explorer: Remove Folder from Workspace (w)                                      //
+// [ctrl+\] Open Explorer                                                               //
+// [ctrl+k] Editor: Open Keyboard Cheat Sheet                                           //
+// [ctrl+h] Previous Tab on Editor                                                      //
+// [ctrl+l] Next Tab on Editor                                                          //
+// [ctrl+z] Toggle Full Screen Terminal                                                 //
+// [ctrl+s] Save File                                                                   //
+// [ctrl+q] Close all Editors or Open Folder                                            //
+// [ctrl+b] Copy Relative Path                                                          //
+// [ctrl+f] Search Workspace                                                            //
+// [ctrl+j] Go down in search workspace, suggestion, terminal pane or quick open        //
+// [ctrl+k] Go up in search workspace, suggestion, terminal pane or quick open          //
+// [ctrl+d] Terminal: Scroll Down                                                       //
+// [ctrl+u] Terminal: Scroll Up                                                         //
+// [ctrl+n] Create new Terminal or Editor                                               //
+// [ctrl+w] Close Terminal or Editor                                                    //
+// [ctrl+g] Search and Replace                                                          //
+// [ctrl+c] Toggle Comment                                                              //
+// [a] File Explorer: Create File                                                       //
+// [y] File Explorer: Copy File                                                         //
+// [x] File Explorer: Cut File                                                          //
+// [p] File Explorer: Paste File                                                        //
+// [r] File Explorer: Rename File                                                       //
+// [d] File Explorer: Delete File                                                       //
+// [w] File Explorer: Remove Folder from Workspace                                      //
 //                                                                                      //
 // ==================================================================================== //
 [
     // ================================================================================
-    // Open Explorer (ctrl+\)
+    // [ctrl+\] Open Explorer
     // ================================================================================
     {
         "key": "ctrl+\\",
@@ -50,7 +50,7 @@
         "command": "-workbench.action.splitEditor"
     },
     // ================================================================================
-    // Open Keyboard Cheat Sheet (ctrl+k)
+    // [ctrl+k] Editor: Open Keyboard Cheat Sheet
     // ================================================================================
     {
         "key": "ctrl+k",
@@ -58,7 +58,7 @@
         "when": "editorFocus || editorIsOpen"
     },
     // ================================================================================
-    // Previous Tab on Editor (ctrl+h)
+    // [ctrl+h] Previous Tab on Editor
     // ================================================================================
     {
         "key": "ctrl+h",
@@ -81,7 +81,7 @@
         "when": "whichkeyVisible"
     },
     // ================================================================================
-    // Next Tab on Editor (ctrl+l)
+    // [ctrl+l] Next Tab on Editor
     // ================================================================================
     {
         "key": "ctrl+l",
@@ -114,7 +114,7 @@
         "when": "chatIsEnabled && inChat"
     },
     // ================================================================================
-    // Toggle Full Screen Terminal  (ctrl+z)
+    // [ctrl+z] Toggle Full Screen Terminal
     // ================================================================================
     {
         "key": "ctrl+z",
@@ -141,7 +141,7 @@
         "command": "-undo"
     },
     // ================================================================================
-    // Save File (ctrl+s)
+    // [ctrl+s] Save File
     // ================================================================================
     {
         "key": "ctrl+s",
@@ -161,7 +161,7 @@
         "when": "editorTextFocus && vim.active && vim.use<C-s> && !inDebugRepl"
     },
     // ================================================================================
-    // Close all Editors or Open Folder (ctrl+q)
+    // [ctrl+q] Close all Editors or Open Folder
     // ================================================================================
     {
         "key": "ctrl+q",
@@ -197,7 +197,7 @@
         "command": "-workbench.action.quickOpenView"
     },
     // ================================================================================
-    // Copy Relative Path (ctrl+b)
+    // [ctrl+b] Copy Relative Path
     // ================================================================================
     {
         "key": "ctrl+b",
@@ -218,7 +218,7 @@
         "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
     },
     // ================================================================================
-    // Search Workspace (ctrl+f)
+    // [ctrl+f] Search Workspace
     // ================================================================================
     {
         "key": "ctrl+f",
@@ -314,7 +314,7 @@
         "when": "focusedView == 'workbench.panel.markers.view'"
     },
     // ================================================================================
-    // Go down in search workspace, suggestion, terminal pane or quick open (ctrl+j)
+    // [ctrl+j] Go down in search workspace, suggestion, terminal pane or quick open
     // ================================================================================
     {
         "key": "ctrl+j",
@@ -361,7 +361,7 @@
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
     },
     // ================================================================================
-    // Go up in search workspace, suggestion, terminal pane or quick open (ctrl+k)
+    // [ctrl+k] Go up in search workspace, suggestion, terminal pane or quick open
     // ================================================================================
     {
         "key": "ctrl+k",
@@ -409,7 +409,7 @@
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
     },
     // ================================================================================
-    // Terminal: Scroll Down (ctrl+d)
+    // [ctrl+d] Terminal: Scroll Down
     // ================================================================================
     {
         "key": "ctrl+d",
@@ -422,7 +422,7 @@
         "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
     },
     // ================================================================================
-    // Terminal: Scroll Up (ctrl+u)
+    // [ctrl+u] Terminal: Scroll Up
     // ================================================================================
     {
         "key": "ctrl+u",
@@ -435,7 +435,7 @@
         "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
     },
     // ================================================================================
-    // Create new Terminal or Editor (ctrl+n)
+    // [ctrl+n] Create new Terminal or Editor
     // ================================================================================
     {
         "key": "ctrl+n",
@@ -453,7 +453,7 @@
         "when": "editorTextFocus && vim.active && vim.use<C-n> && !inDebugRepl || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
     },
     // ================================================================================
-    // Close Terminal or Editor (ctrl+w)
+    // [ctrl+w] Close Terminal or Editor
     // ================================================================================
     {
         "key": "ctrl+w",
@@ -471,7 +471,7 @@
         "when": "activeEditorGroupEmpty && multipleEditorGroups"
     },
     // ================================================================================
-    // Search and Replace (ctrl+g)
+    // [ctrl+g] Search and Replace
     // ================================================================================
     {
         "key": "ctrl+g",
@@ -503,7 +503,7 @@
         "command": "-workbench.action.gotoLine"
     },
     // ================================================================================
-    // Toggle Comment (ctrl+c)
+    // [ctrl+c] Toggle Comment
     // ================================================================================
     {
         "key": "ctrl+c",
@@ -551,7 +551,7 @@
         "when": "fileMatchOrMatchFocus"
     },
     // ================================================================================
-    // File Explorer: Create File (a)
+    // [a] File Explorer: Create File
     // ================================================================================
     {
         "key": "a",
@@ -559,7 +559,7 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     // ================================================================================
-    // File Explorer: Copy File (y)
+    // [y] File Explorer: Copy File
     // ================================================================================
     {
         "key": "y",
@@ -567,7 +567,7 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     // ================================================================================
-    // File Explorer: Cut File (x)
+    // [x] File Explorer: Cut File
     // ================================================================================
     {
         "key": "x",
@@ -575,7 +575,7 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     // ================================================================================
-    // File Explorer: Paste File (p)
+    // [p] File Explorer: Paste File
     // ================================================================================
     {
         "key": "p",
@@ -583,7 +583,7 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     // ================================================================================
-    // File Explorer: Rename File (r)
+    // [r] File Explorer: Rename File
     // ================================================================================
     {
         "key": "r",
@@ -591,7 +591,7 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     // ================================================================================
-    // File Explorer: Delete File (d)
+    // [d] File Explorer: Delete File
     // ================================================================================
     {
         "key": "d",
@@ -599,7 +599,7 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     // ================================================================================
-    // File Explorer: Remove Folder from Workspace (w)
+    // [w] File Explorer: Remove Folder from Workspace
     // ================================================================================
     {
         "key": "w",
