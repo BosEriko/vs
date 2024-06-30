@@ -13,6 +13,8 @@ scoop bucket add nerd-fonts
 scoop install nerd-fonts/JetBrainsMono-NF-Mono
 ```
 
+_Note: If the font doesn't show, please restart your pc._
+
 ## Sync your settings
 Go to the folder where the current `settings.json` and `keybindings.json` are located and run the following script.
 ```sh
