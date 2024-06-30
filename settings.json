@@ -55,7 +55,7 @@
     // ================================================================================
     "window.title": "Editor",
     "workbench.colorTheme": "poimandres",
-    "editor.fontFamily": "FiraMono Nerd Font Mono",
+    "editor.fontFamily": "JetbrainsMonoNL Nerd Font Mono",
     "workbench.iconTheme": "city-lights-icons-vsc",
     "glassit.alpha": 230,
     "window.titleBarStyle": "native",
