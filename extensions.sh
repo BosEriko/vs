@@ -8,4 +8,3 @@ code --install-extension samueltscott.maximizeterminal
 code --install-extension wingrunr21.vscode-ruby
 code --install-extension yummygum.city-lights-icon-vsc
 code --install-extension s-nlf-fh.glassit
-code --install-extension icrawl.discord-vscode
