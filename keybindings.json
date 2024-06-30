@@ -1,6 +1,7 @@
 // ================================== LIST OF KEYS ==================================== //
 //                                                                                      //
 // Open Explorer (ctrl+\)                                                               //
+// Open Keyboard Cheat Sheet (ctrl+k)                                                   //
 // Previous Tab on Editor (ctrl+h)                                                      //
 // Next Tab on Editor (ctrl+l)                                                          //
 // Toggle Full Screen Terminal  (ctrl+z)                                                //
@@ -47,6 +48,14 @@
     {
         "key": "ctrl+\\",
         "command": "-workbench.action.splitEditor"
+    },
+    // ================================================================================
+    // Open Keyboard Cheat Sheet (ctrl+k)
+    // ================================================================================
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.openGlobalKeybindingsFile",
+        "when": "editorFocus || editorIsOpen"
     },
     // ================================================================================
     // Previous Tab on Editor (ctrl+h)
