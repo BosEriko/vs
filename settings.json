@@ -19,6 +19,8 @@
         "itemMargin": 0
     },
     "apc.stylesheet": {
+        // Hide Cursor
+        "*": "cursor: none !important",
         // Sidebar Style
         ".monaco-list::before": "display: none !important",
         ".monaco-workbench .part.sidebar .title-actions .actions-container": "justify-content: space-evenly !important",
