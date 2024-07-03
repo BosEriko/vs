@@ -176,6 +176,12 @@
             "command": "flip.document"
         },
         {
+            "key": "i",
+            "name": "Show tooltip hover message",
+            "type": "command",
+            "command": "editor.action.showHover"
+        },
+        {
             "key": "s",
             "name": "Sort lines",
             "type": "command",
