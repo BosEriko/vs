@@ -77,6 +77,7 @@
     "editor.renderWhitespace": "none",
     "terminal.integrated.tabs.enabled": true,
     "workbench.statusBar.visible": true,
+    "workbench.editor.showTabs": "multiple",
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.codeLens.authors.enabled": false,
     "workbench.colorCustomizations": {

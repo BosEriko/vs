@@ -38,6 +38,11 @@
     },
     {
         "key": "ctrl+shift+\\",
+        "command": "workbench.action.showMultipleEditorTabs",
+        "when": "!inZenMode && config.workbench.editor.showTabs != 'multiple'"
+    },
+    {
+        "key": "ctrl+shift+\\",
         "command": "-workbench.action.terminal.focusTabs",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
     },
