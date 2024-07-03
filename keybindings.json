@@ -1,5 +1,6 @@
 // ================================== LIST OF KEYS ==================================== //
 //                                                                                      //
+// [ctrl+shift+\] View: Hide Editor Tabs                                                //
 // [ctrl+\] Open Explorer                                                               //
 // [ctrl+k] Editor: Open Keyboard Cheat Sheet                                           //
 // [ctrl+h] Previous Tab on Editor                                                      //
@@ -27,6 +28,24 @@
 //                                                                                      //
 // ==================================================================================== //
 [
+    // ================================================================================
+    // [ctrl+shift+\] View: Hide Editor Tabs
+    // ================================================================================
+    {
+        "key": "ctrl+shift+\\",
+        "command": "workbench.action.hideEditorTabs",
+        "when": "!inZenMode && config.workbench.editor.showTabs != 'none'"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "-workbench.action.terminal.focusTabs",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "-editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
     // ================================================================================
     // [ctrl+\] Open Explorer
     // ================================================================================
