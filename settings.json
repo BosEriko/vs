@@ -67,6 +67,7 @@
     "glassit.alpha": 230,
     "window.titleBarStyle": "native",
     "editor.minimap.enabled": false,
+    "editor.lightbulb.enabled": "off",
     "editor.stickyScroll.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
