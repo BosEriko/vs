@@ -1,10 +1,7 @@
 code --install-extension christianalexander.flip
-code --install-extension dbaeumer.vscode-eslint
 code --install-extension deibit.devdocs
 code --install-extension eamodio.gitlens
 code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension rebornix.ruby
 code --install-extension samueltscott.maximizeterminal
-code --install-extension wingrunr21.vscode-ruby
 code --install-extension yummygum.city-lights-icon-vsc
 code --install-extension s-nlf-fh.glassit
