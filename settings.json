@@ -245,6 +245,8 @@
     // ================================================================================
     // Settings
     // ================================================================================
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.enablePersistentSessions": false,
     "extensions.ignoreRecommendations": true,
     "explorer.excludeGitIgnore": true,
     "telemetry.telemetryLevel": "off",
