@@ -70,6 +70,7 @@
     "editor.minimap.enabled": false,
     "editor.lightbulb.enabled": "off",
     "editor.stickyScroll.enabled": false,
+    "workbench.tree.enableStickyScroll": false,
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
     "workbench.sideBar.location": "right",
