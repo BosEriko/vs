@@ -30,4 +30,4 @@ irm https://raw.githubusercontent.com/BosEriko/vs/HEAD/extensions.sh | iex
 ```
 
 ## Update Default Profile
-If you have a [Virtual Machine](https://github.com/BosEriko/wsl) set up, update your default terminal profile by pressing `Ctrl`+`Shift`+`P` to `Show All Commands`. Then on the list select `Terminal: Select Default Profile` and choose the [Distro](https://github.com/BosEriko/ubuntu) of your choice.
+If you have a [Virtual Machine](https://github.com/BosEriko/wsl) set up, update your default terminal profile by pressing `Ctrl`+`Shift`+`P` to `Show All Commands`. Then on the list select `Terminal: Select Default Profile` and choose the Distro of your choice.
