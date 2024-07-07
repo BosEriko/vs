@@ -68,7 +68,7 @@
     "editor.fontFamily": "Fira Code, JetbrainsMonoNL Nerd Font Mono",
     "editor.fontLigatures": true,
     "workbench.iconTheme": "city-lights-icons-vsc",
-    "glassit.alpha": 230,
+    "glassit.alpha": 240,
     "window.titleBarStyle": "native",
     "editor.minimap.enabled": false,
     "editor.lightbulb.enabled": "off",
