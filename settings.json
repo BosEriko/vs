@@ -99,6 +99,8 @@
         "scrollbarSlider.background": "#ffffff00",
         "focusBorder": "#ffffff00",
         "tab.activeBorderTop": "#ffffff00",
+        "editorGroup.border": "#ffffff00",
+        "editorGroupHeader.tabsBorder": "#ffffff00"
     },
     // ================================================================================
     // Vim
