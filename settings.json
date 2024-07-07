@@ -43,7 +43,7 @@
         ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.sizing-fit": "width: auto !important",
         ".monaco-icon-label-container": "padding-right: 3px !important",
         ".tab-actions": "margin-left: -5px !important",
-        ".tab": "background-color: rgba(255,255,255,.0) !important; border: none !important; margin-right: 5px !important; border-radius: 10px;",
+        ".tab": "background-color: rgba(255,255,255,.0) !important; border: none !important; margin-right: 5px !important; border-radius: 10px !important;",
         ".tab.active.selected": "background-color: rgba(0,0,0,.35) !important; border: none !important;",
         ".tabs": "background-color: rgba(255,255,255,.0) !important; margin: 0 5px 5px !important;",
         ".tabs-and-actions-container": "background-color: none !important",
@@ -97,7 +97,8 @@
         "scrollbar.shadow": "#ffffff00",
         "widget.shadow": "#ffffff00",
         "scrollbarSlider.background": "#ffffff00",
-        "focusBorder": "#ffffff00"
+        "focusBorder": "#ffffff00",
+        "tab.activeBorderTop": "#ffffff00",
     },
     // ================================================================================
     // Vim
