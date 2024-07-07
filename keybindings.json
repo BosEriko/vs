@@ -154,7 +154,7 @@
         "key": "ctrl+z",
         "command": "workbench.action.terminal.focus",
         "when": "!terminalFocus"
-    }
+    },
     {
         "key": "ctrl+z",
         "command": "-extension.vim_ctrl+z",
