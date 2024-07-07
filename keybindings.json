@@ -147,7 +147,7 @@
     },
     {
         "key": "ctrl+z",
-        "command": "maximizeterminal.openMaximizedTerminal",
+        "command": "workbench.action.toggleMaximizedPanel",
         "when": "!terminalFocus"
     },
     {
