@@ -142,7 +142,7 @@
     // ================================================================================
     {
         "key": "ctrl+z",
-        "command": "multiCommand.maximizeAndFocusTerminal",
+        "command": "multiCommand.toggleMaximizedPanel",
         "when": "!terminalFocus"
     },
     {

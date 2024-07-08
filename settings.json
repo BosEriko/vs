@@ -107,7 +107,7 @@
     // ================================================================================
     "multiCommand.commands": [
         {
-            "command": "multiCommand.maximizeAndFocusTerminal",
+            "command": "multiCommand.toggleMaximizedPanel",
             "sequence": [
                 "workbench.action.toggleMaximizedPanel",
                 "workbench.action.terminal.focus"
