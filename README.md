@@ -29,21 +29,5 @@ Run the command below on PowerShell to install the extensions.
 irm https://raw.githubusercontent.com/BosEriko/vs/HEAD/extensions.sh | iex
 ```
 
-## Memory Issue
-Sometimes WSL2 will take too much memory. To fix run the commands below on PowerShell.
-```sh
-wsl --shutdown
-notepad "$env:USERPROFILE/.wslconfig"
-```
-Then add the following configuration to `.wslconfig`.
-```
-[wsl2]
-memory=8GB
-swap=0
-
-[experimental]
-autoMemoryReclaim=gradual
-```
-
 ## Update Default Profile
 If you have a [Virtual Machine](https://github.com/BosEriko/wsl) set up, update your default terminal profile by pressing `Ctrl`+`Shift`+`P` to `Show All Commands`. Then on the list select `Terminal: Select Default Profile` and choose the Distro of your choice.
