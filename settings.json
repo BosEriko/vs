@@ -265,6 +265,7 @@
     // ================================================================================
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
+    "window.restoreWindows": "none",
     "extensions.ignoreRecommendations": true,
     "explorer.excludeGitIgnore": true,
     "telemetry.telemetryLevel": "off",
