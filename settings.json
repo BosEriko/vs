@@ -259,7 +259,6 @@
             ]
         }
     },
-    "terminal.integrated.cwd": "//wsl.localhost/Ubuntu/home/boseriko",
     "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
     // ================================================================================
     // Settings
