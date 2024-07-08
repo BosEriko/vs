@@ -103,6 +103,18 @@
         "editorGroupHeader.tabsBorder": "#ffffff00"
     },
     // ================================================================================
+    // Multi Command
+    // ================================================================================
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.maximizeAndFocusTerminal",
+            "sequence": [
+                "workbench.action.toggleMaximizedPanel",
+                "workbench.action.terminal.focus"
+            ]
+        }
+    ],
+    // ================================================================================
     // Vim
     // ================================================================================
     "editor.lineNumbers": "relative",

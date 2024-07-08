@@ -142,18 +142,13 @@
     // ================================================================================
     {
         "key": "ctrl+z",
+        "command": "multiCommand.maximizeAndFocusTerminal",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+z",
         "command": "workbench.action.terminal.toggleTerminal",
         "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+z",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "!terminalFocus"
-    },
-    {
-        "key": "ctrl+z",
-        "command": "workbench.action.terminal.focus",
-        "when": "!terminalFocus"
     },
     {
         "key": "ctrl+z",
