@@ -1,7 +1,12 @@
 code --install-extension christianalexander.flip
 code --install-extension deibit.devdocs
+code --install-extension drcika.apc-extension
 code --install-extension eamodio.gitlens
+code --install-extension ms-vscode-remote.remote-wsl
 code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension yummygum.city-lights-icon-vsc
-code --install-extension s-nlf-fh.glassit
+code --install-extension pmndrs.pmndrs
 code --install-extension ryuta46.multi-command
+code --install-extension s-nlf-fh.glassit
+code --install-extension vscodevim.vim
+code --install-extension VSpaceCode.whichkey
+code --install-extension yummygum.city-lights-icon-vsc
