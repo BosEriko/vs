@@ -43,15 +43,13 @@
         ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.sizing-fit": "width: auto !important",
         ".monaco-icon-label-container": "padding-right: 3px !important",
         ".tab-actions": "margin-left: -5px !important",
-        ".tab": "background-color: rgba(255,255,255,.0) !important; border: none !important; margin-right: 5px !important; border-radius: 10px !important;",
+        ".tab": "background-color: rgba(255,255,255,.0) !important; border: none !important; margin-right: 5px !important;",
         ".tab.active.selected": "background-color: rgba(0,0,0,.35) !important; border: none !important;",
-        ".tabs": "background-color: rgba(255,255,255,.0) !important; margin: 0 5px 5px !important;",
+        ".tabs": "background-color: rgba(255,255,255,.0) !important",
         ".tabs-and-actions-container": "background-color: none !important",
         // Editor Group
         ".editor-group-container": "margin-top: 5px !important;",
         // Terminal Tabs
-        ".shell-integration.integrated-terminal .tabs-list-container": "margin: 5px !important;",
-        ".shell-integration.integrated-terminal .monaco-list-row": "border-radius: 5px !important;",
         ".shell-integration.integrated-terminal .monaco-list-row.selected": "background-color: rgba(0,0,0,.35) !important; border: none !important;",
         // Terminal Height Fix
         ".basepanel>.content": "height: 100vh !important",
