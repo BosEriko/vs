@@ -4,6 +4,7 @@ code --install-extension drcika.apc-extension
 code --install-extension eamodio.gitlens
 code --install-extension EthanSK.restore-terminals
 code --install-extension GitHub.copilot
+code --install-extension GitHub.copilot-chat
 code --install-extension ms-vscode-remote.remote-ssh
 code --install-extension ms-vscode-remote.remote-wsl
 code --install-extension ms-vsliveshare.vsliveshare
