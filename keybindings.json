@@ -290,7 +290,7 @@
     {
         "key": "ctrl+f",
         "command": "workbench.action.findInFiles",
-        "when": "editorIsOpen"
+        "when": "emptyWorkspaceSupport && workbenchState != 'empty'"
     },
     {
         "key": "ctrl+f",
