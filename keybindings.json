@@ -80,12 +80,12 @@
     {
         "key": "ctrl+x",
         "command": "workbench.panel.chat.view.copilot.focus",
-        "when": "!terminalFocus && !searchViewletFocus && !explorerViewletFocus"
+        "when": "editorFocus && !terminalFocus && !searchViewletFocus && !explorerViewletFocus"
     },
     {
         "key": "ctrl+x",
         "command": "workbench.action.toggleSidebarVisibility",
-        "when": "!editorFocus && !terminalFocus && !searchViewletFocus && !explorerViewletFocus && !terminalChatFocus && !terminalChatVisible"
+        "when": "editorIsOpen && !editorFocus && !terminalFocus && !searchViewletFocus && !explorerViewletFocus && !terminalChatFocus && !terminalChatVisible"
     },
     {
         "key": "ctrl+x",
