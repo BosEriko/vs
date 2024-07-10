@@ -58,7 +58,7 @@
     {
         "key": "ctrl+\\",
         "command": "workbench.files.action.focusFilesExplorer",
-        "when": "!explorerViewletFocus && explorerViewletVisible"
+        "when": "emptyWorkspaceSupport && workbenchState != 'empty' && !explorerViewletFocus && explorerViewletVisible"
     },
     {
         "key": "ctrl+\\",
@@ -68,7 +68,7 @@
     {
         "key": "ctrl+\\",
         "command": "workbench.view.explorer",
-        "when": "!explorerViewletFocus && !explorerViewletVisible"
+        "when": "emptyWorkspaceSupport && workbenchState != 'empty' && !explorerViewletFocus && !explorerViewletVisible"
     },
     {
         "key": "ctrl+\\",
