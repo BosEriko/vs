@@ -84,13 +84,23 @@
     },
     {
         "key": "ctrl+x",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "!editorFocus && !terminalFocus && !searchViewletFocus && !explorerViewletFocus && !terminalChatFocus && !terminalChatVisible"
+    },
+    {
+        "key": "ctrl+x",
         "command": "workbench.action.terminal.chat.start",
         "when": "terminalFocus && !editorFocus && !searchViewletFocus && !explorerViewletFocus"
     },
     {
         "key": "ctrl+x",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "!editorFocus && !terminalFocus && !searchViewletFocus && !explorerViewletFocus && !terminalChatVisible"
+        "command": "workbench.action.terminal.chat.close",
+        "when": "terminalChatFocus && terminalChatVisible && !editorFocus && !searchViewletFocus && !explorerViewletFocus"
+    },
+    {
+        "key": "escape",
+        "command": "-workbench.action.terminal.chat.close",
+        "when": "terminalChatFocus && terminalChatVisible"
     },
     {
         "key": "ctrl+x",
@@ -176,7 +186,7 @@
     {
         "key": "ctrl+z",
         "command": "multiCommand.toggleMaximizedPanel",
-        "when": "!terminalFocus && !terminalChatVisible"
+        "when": "!terminalFocus && !terminalChatFocus && !terminalChatVisible"
     },
     {
         "key": "ctrl+z",
