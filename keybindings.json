@@ -2,6 +2,7 @@
 //                                                                                      //
 // [ctrl+shift+\] View: Hide Editor Tabs                                                //
 // [ctrl+\] Open Explorer                                                               //
+// [ctrl+x] Open Copilot                                                                //
 // [ctrl+k] Editor: Open Keyboard Cheat Sheet                                           //
 // [ctrl+h] Previous Tab on Editor                                                      //
 // [ctrl+l] Next Tab on Editor                                                          //
@@ -72,6 +73,33 @@
     {
         "key": "ctrl+\\",
         "command": "-workbench.action.splitEditor"
+    },
+    // ================================================================================
+    // [ctrl+x] Open Copilot
+    // ================================================================================
+    {
+        "key": "ctrl+x",
+        "command": "workbench.panel.chat.view.copilot.focus",
+        "when": "editorFocus && !terminalFocus && !searchViewletFocus && !explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "!editorFocus && !terminalFocus && !searchViewletFocus && !explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "-editor.action.clipboardCutAction"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "-extension.vim_ctrl+x",
+        "when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "-filesExplorer.cut",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     },
     // ================================================================================
     // [ctrl+k] Editor: Open Keyboard Cheat Sheet
