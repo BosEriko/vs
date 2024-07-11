@@ -50,8 +50,8 @@
         ".shell-integration.integrated-terminal .monaco-list-row": "border-radius: 5px !important;",
         ".shell-integration.integrated-terminal .monaco-list-row.selected": "background-color: rgba(0,0,0,.35) !important; border: none !important;",
         // Terminal Height Fix
-        ".basepanel>.content": "height: 100vh !important;",
-        ".xterm-screen": "height: 98vh !important;",
+        ".basepanel>.content, .xterm-screen": "height: 100vh !important;",
+        ".basepanel>.content": "margin-top: 20px !important;",
         // Homepage UI
         ".editor-group-watermark .letterpress": "background-image: url('../../../../../../../data/user-data/User/logo.png'), url('https://raw.githubusercontent.com/BosEriko/vs/master/logo.png') !important;",
         ".editor-group-watermark .shortcuts": "display: none !important;"
