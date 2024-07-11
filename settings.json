@@ -207,7 +207,26 @@
                     "key": "f",
                     "name": "Fix This",
                     "type": "command",
-                    "command": "github.copilot.interactiveEditor.fix "
+                    "command": "github.copilot.interactiveEditor.fix"
+                },
+                {
+                    "key": "e",
+                    "name": "Explain This",
+                    "type": "command",
+                    "command": "github.copilot.chat.explain.palette"
+                },
+                {
+                    "key": "g",
+                    "name": "Generate",
+                    "type": "command",
+                    "bindings": [
+                        {
+                            "key": "e",
+                            "name": "Docs",
+                            "type": "command",
+                            "command": "github.copilot.interactiveEditor.generateDocs"
+                        }
+                    ]
                 }
             ]
         },
