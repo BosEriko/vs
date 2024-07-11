@@ -199,6 +199,19 @@
             "command": "editor.action.showHover"
         },
         {
+            "key": "x",
+            "name": "Copilot",
+            "type": "command",
+            "bindings": [
+                {
+                    "key": "f",
+                    "name": "Fix This",
+                    "type": "command",
+                    "command": "github.copilot.interactiveEditor.fix "
+                }
+            ]
+        },
+        {
             "key": "s",
             "name": "Sort lines",
             "type": "command",
@@ -239,6 +252,12 @@
                     "name": "Hidden Characters",
                     "type": "command",
                     "command": "editor.action.toggleRenderWhitespace"
+                },
+                {
+                    "key": "x",
+                    "name": "Copilot",
+                    "type": "command",
+                    "command": "github.copilot.toggleCopilot"
                 }
             ]
         }
