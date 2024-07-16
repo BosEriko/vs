@@ -21,7 +21,7 @@
 // [ctrl+c] Toggle Comment                                                              //
 // [a] File Explorer: Create File                                                       //
 // [y] File Explorer: Copy File                                                         //
-// [x] File Explorer: Cut File                                                          //
+// [m] File Explorer: Move File                                                         //
 // [p] File Explorer: Paste File                                                        //
 // [r] File Explorer: Rename File                                                       //
 // [d] File Explorer: Delete File                                                       //
@@ -630,10 +630,10 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     // ================================================================================
-    // [x] File Explorer: Cut File
+    // [m] File Explorer: Move File
     // ================================================================================
     {
-        "key": "x",
+        "key": "m",
         "command": "filesExplorer.cut",
         "when": "filesExplorerFocus && !inputFocus"
     },
