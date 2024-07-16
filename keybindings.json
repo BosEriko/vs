@@ -476,12 +476,12 @@
     // ================================================================================
     {
         "key": "ctrl+d",
-        "command": "workbench.action.terminal.scrollDownPage",
+        "command": "workbench.action.terminal.scrollDown",
         "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
     },
     {
-        "key": "shift+pagedown",
-        "command": "-workbench.action.terminal.scrollDownPage",
+        "key": "ctrl+alt+pagedown",
+        "command": "-workbench.action.terminal.scrollDown",
         "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
     },
     // ================================================================================
@@ -489,12 +489,12 @@
     // ================================================================================
     {
         "key": "ctrl+u",
-        "command": "workbench.action.terminal.scrollUpPage",
+        "command": "workbench.action.terminal.scrollUp",
         "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
     },
     {
-        "key": "shift+pageup",
-        "command": "-workbench.action.terminal.scrollUpPage",
+        "key": "ctrl+alt+pageup",
+        "command": "-workbench.action.terminal.scrollUp",
         "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
     },
     // ================================================================================
