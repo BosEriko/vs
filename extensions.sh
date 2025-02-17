@@ -14,3 +14,6 @@ code --install-extension s-nlf-fh.glassit
 code --install-extension vscodevim.vim
 code --install-extension VSpaceCode.whichkey
 code --install-extension yummygum.city-lights-icon-vsc
+code --install-extension jakebecker.elixir-ls
+code --install-extension phoenixframework.phoenix
+code --install-extension pantajoe.vscode-elixir-credo
