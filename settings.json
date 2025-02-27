@@ -128,7 +128,6 @@
         "<C-p>": false, // Fuzzy Find (ctrl+p)
         // Custom Hotkeys
         "<C-\\>": false, // Open Explorer (ctrl+\)
-        "<C-x>": false, // Open Copilot (ctrl+x)
         "<C-h>": false, // Previous Tab on Editor (ctrl+h)
         "<C-l>": false, // Next Tab on Editor (ctrl+l)
         "<C-z>": false, // Toggle Full Screen Terminal  (ctrl+z)
@@ -199,50 +198,6 @@
             "command": "editor.action.showHover"
         },
         {
-            "key": "x",
-            "name": "Copilot",
-            "type": "command",
-            "bindings": [
-                {
-                    "key": "f",
-                    "name": "Fix This",
-                    "type": "command",
-                    "command": "github.copilot.interactiveEditor.fix"
-                },
-                {
-                    "key": "e",
-                    "name": "Explain This",
-                    "type": "command",
-                    "command": "github.copilot.chat.explain.palette"
-                },
-                {
-                    "key": "g",
-                    "name": "Generate",
-                    "type": "command",
-                    "bindings": [
-                        {
-                            "key": "d",
-                            "name": "Docs",
-                            "type": "command",
-                            "command": "github.copilot.interactiveEditor.generateDocs"
-                        },
-                        {
-                            "key": "t",
-                            "name": "Tests",
-                            "type": "command",
-                            "command": "github.copilot.interactiveEditor.generateTests"
-                        },
-                        {
-                            "key": "s",
-                            "name": "Something",
-                            "type": "command",
-                            "command": "github.copilot.interactiveEditor.generate"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "key": "s",
             "name": "Sort lines",
             "type": "command",
@@ -283,12 +238,6 @@
                     "name": "Hidden Characters",
                     "type": "command",
                     "command": "editor.action.toggleRenderWhitespace"
-                },
-                {
-                    "key": "x",
-                    "name": "Copilot",
-                    "type": "command",
-                    "command": "github.copilot.toggleCopilot"
                 }
             ]
         }
