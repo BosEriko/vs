@@ -9,7 +9,7 @@
     // ================================================================================
     // Theme & UI Settings
     // ================================================================================
-    "window.title": "Editor",
+    "window.title": " ",
     "workbench.colorTheme": "poimandres",
     "editor.fontFamily": "Fira Code, JetbrainsMonoNL Nerd Font Mono",
     "editor.fontLigatures": true,
