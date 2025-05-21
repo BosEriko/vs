@@ -1,6 +1,6 @@
+code --install-extension be5invis.vscode-custom-css
 code --install-extension christianalexander.flip
 code --install-extension deibit.devdocs
-code --install-extension drcika.apc-extension
 code --install-extension eamodio.gitlens
 code --install-extension EthanSK.restore-terminals
 code --install-extension geequlim.godot-tools
