@@ -23,6 +23,9 @@ curl -fsSL https://raw.githubusercontent.com/BosEriko/vs/HEAD/install.sh | sh
 
 _Note: If you're having a hard time locating the folder you can easily get it by pressing `Ctrl`+`Shift`+`P` to `Show All Commands`. Then on the list select `Preferences: Open User Settings (JSON)` then `File: Copy Relative Path of Active File`._
 
+## Sync Your CSS
+Add the proper path of the CSS on `settings.json` for the parameter `vscode_custom_css.imports`.
+
 ## Install Extensions
 Run the command below on PowerShell to install the extensions.
 ```sh

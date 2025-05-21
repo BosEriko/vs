@@ -1,61 +1,11 @@
 {
     // ================================================================================
-    // APC - UI Customizer
+    // Custom CSS
     // ================================================================================
-    "apc.menubar.compact": true,
-    "apc.electron": {
-        "frame": false,
-        "titleBarStyle": "hidden"
-    },
-    "apc.header": {
-        "height": 37
-    },
-    "apc.sidebar.titlebar": {
-        "height": 37
-    },
-    "apc.activityBar": {
-        "size": 40,
-        "itemSize": 40,
-        "itemMargin": 0
-    },
-    "apc.stylesheet": {
-        // Sidebar Style
-        ".monaco-list::before": "display: none !important;",
-        ".monaco-workbench .part.sidebar .title-actions .actions-container": "justify-content: space-evenly !important;",
-        ".monaco-workbench ::selection": "background-color: none !important;",
-        ".sidebar": "border: none !important;",
-        // Sidebar Title
-        ".title-label": "display: none !important;",
-        // Sidebar Positioning
-        ".explorer-folders-view": "margin-top: 30px !important;",
-        // Editor and Explorer Top Right Menu
-        ".editor-actions": "display: none !important;",
-        ".composite.title": "display: none !important;",
-        // Scroll Decorations on Editor (Error, Warning, etc.)
-        ".decorationsOverviewRuler": "display: none !important;",
-        // Scroll Decorations on Terminal (Error, Warning, etc.)
-        ".xterm-decoration-overview-ruler": "display: none !important;",
-        // Command Input on Quick Open
-        ".quick-input-widget .quick-input-titlebar": "display: none !important;",
-        // Editor Tabs
-        ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.sizing-fit": "width: auto !important;",
-        ".monaco-icon-label-container": "padding-right: 3px !important;",
-        ".tab-actions": "margin-left: -5px !important;",
-        ".tab": "background-color: rgba(255,255,255,.0) !important; border: none !important; border-radius: 10px !important;",
-        ".tab.active.selected": "background-color: rgba(0,0,0,.35) !important; border: none !important;",
-        ".tabs": "background-color: rgba(255,255,255,.0) !important; margin: 5px !important;",
-        ".tabs-and-actions-container": "background-color: none !important;",
-        // Terminal Tabs
-        ".shell-integration.integrated-terminal .tabs-list-container": "margin: 5px !important;",
-        ".shell-integration.integrated-terminal .monaco-list-row": "border-radius: 5px !important;",
-        ".shell-integration.integrated-terminal .monaco-list-row.selected": "background-color: rgba(0,0,0,.35) !important; border: none !important;",
-        // Terminal Height Fix
-        ".basepanel>.content, .xterm-screen": "height: 100vh !important;",
-        ".basepanel>.content": "margin-top: 20px !important;",
-        // Homepage UI
-        ".editor-group-watermark .letterpress": "background-image: url('../../../../../../../data/user-data/User/logo.png'), url('https://raw.githubusercontent.com/BosEriko/vs/master/logo.png') !important;",
-        ".editor-group-watermark .shortcuts": "display: none !important;"
-    },
+    "vscode_custom_css.imports": [
+        "file:///C:/Users/Bos/scoop/apps/vscode/1.100.2/data/user-data/User/custom.css"
+    ],
+    "vscode_custom_css.policy": true,
     // ================================================================================
     // Theme & UI Settings
     // ================================================================================
@@ -65,7 +15,7 @@
     "editor.fontLigatures": true,
     "workbench.iconTheme": "city-lights-icons-vsc",
     "glassit.alpha": 240,
-    "window.titleBarStyle": "native",
+    "window.titleBarStyle": "custom",
     "editor.minimap.enabled": false,
     "editor.lightbulb.enabled": "off",
     "editor.stickyScroll.enabled": false,
